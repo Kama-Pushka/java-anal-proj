@@ -1,4 +1,4 @@
-package org.ulearnstatistic;
+package org.ulearnstatistic.model;
 
 public class ModuleStudentStatistic {
     private final int moduleId;
@@ -9,7 +9,7 @@ public class ModuleStudentStatistic {
     private int activityPoint;
     private int cqPoint;
 
-    ModuleStudentStatistic(int moduleId, int studentId) {
+    public ModuleStudentStatistic(int moduleId, int studentId) {
         this.moduleId = moduleId;
         this.studentId = studentId;
     }

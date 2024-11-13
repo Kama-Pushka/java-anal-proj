@@ -1,4 +1,4 @@
-package org.ulearnstatistic;
+package org.ulearnstatistic.model;
 
 public class Student {
     private final int id;

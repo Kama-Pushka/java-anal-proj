@@ -1,22 +1,20 @@
 package org.ulearnstatistic;
 
 import java.io.*;
-import java.util.*;
 
-import com.opencsv.*;
-import com.opencsv.exceptions.CsvValidationException;
+import org.ulearnstatistic.parser.CSVUlearnReader;
 
 public class Main {
     public static void main(String[] args) {
         try {
             var ulearn = new CSVUlearnReader();
-            ulearn.read("java-anal-proj\\data\\basicprogramming_2.csv"); // TODO relative path
+            ulearn.read("data\\java-rtf.csv");
 
             var moduleList = ulearn.getModules();
             var students = ulearn.getStudents();
 
-            ulearn.write("java-anal-proj\\data\\report.txt"); // TODO relative path
-        } catch (IOException | CsvValidationException e) {
+            ulearn.write("data\\report.txt");
+        } catch (IOException e) {
             throw new RuntimeException(e);
         }
     }
