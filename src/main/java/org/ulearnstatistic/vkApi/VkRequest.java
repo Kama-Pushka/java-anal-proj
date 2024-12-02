@@ -10,7 +10,7 @@ import java.util.List;
 
 public class VkRequest {
     public static HashMap<String, SearchResponse> searchStudentsByGroups(VkRepository vk, List<Student> students, long[] groupId) {
-        var studentDct = new HashMap<String, SearchResponse>();
+        var studentDct = new HashMap<String, SearchResponse>(); // TODO заменить на ID
         for (var student : students) {
             var name = student.getName();
             for (var i = 0; i < groupId.length && studentDct.get(name) == null; i++) {
