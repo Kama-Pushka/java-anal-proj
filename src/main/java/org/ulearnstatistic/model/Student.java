@@ -5,6 +5,9 @@ import java.text.SimpleDateFormat;
 import java.time.LocalDate;
 import java.util.Calendar;
 import java.util.Date;
+import java.util.Objects;
+
+import org.ulearnstatistic.db.model.StudentEntity;
 
 public class Student {
     private final int id;
@@ -22,6 +25,19 @@ public class Student {
         id = System.identityHashCode(this); // TODO ??
     }
 
+    public Student(StudentEntity student) {
+        this.id = student.id;
+        this.surname = student.surname;
+        this.name = student.name;
+        this.sex = Objects.equals(student.sex, "null") ? Sex.valueOf(student.sex) : null;
+        this.dateOfBirth = Calendar.getInstance();
+        dateOfBirth.setTime(student.getDateOfBirth());
+        this.group = student.group;
+        this.country = student.country;
+        this.city = student.city;
+        this.university = new University(447, student.university);
+    }
+
     public void setName(String name) {
         this.name = name;
     }
@@ -31,9 +47,6 @@ public class Student {
     public void setSex(Sex sex) {
         this.sex = sex;
     }
-    //public void setAge(int age) {
-    //    this.age = age;
-    //}
     public void setGroup(String group) {
         this.group = group;
     }

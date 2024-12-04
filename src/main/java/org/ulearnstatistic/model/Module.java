@@ -40,6 +40,10 @@ public class Module {
     public ModuleStudentStatistic getStatistic(int id) {
         return statistics.get(id);
     }
+    public Map<Integer, ModuleStudentStatistic> getStatistics() { return statistics; }
+    public ArrayList<Training> getTrainings() { return trainings; }
+    public ArrayList<Practice> getPractices() { return practices; }
+    public ArrayList<ControlQuestion> getCq() { return cq; }
     public Training getTraining(String name) {
         for (var training : trainings) {
             if (Objects.equals(training.getName(), name)) {

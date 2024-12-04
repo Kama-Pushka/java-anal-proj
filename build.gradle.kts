@@ -22,7 +22,8 @@ dependencies {
     implementation("commons-io:commons-io:2.6")
     implementation("org.apache.commons:commons-collections4:4.3")
     implementation("com.google.code.gson:gson:2.8.5")
-    //implementation("org.slf4j:slf4j-api:1.7.26")
+    implementation("org.slf4j:slf4j-api:1.7.26")
+    implementation("org.xerial:sqlite-jdbc:3.47.1.0")
 }
 
 tasks.test {

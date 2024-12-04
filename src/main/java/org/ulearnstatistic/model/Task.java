@@ -6,7 +6,7 @@ import java.util.Map;
 public abstract class Task {
     protected final int id;
     protected final String name;
-    protected final Map<String, Integer> points = new HashMap<>();
+    protected final Map<Integer, Integer> points = new HashMap<>();
 
     public Task(String name) {
         this.id = hashCode();
@@ -22,9 +22,12 @@ public abstract class Task {
     public int getPoint(int studentId) {
         return points.get(studentId);
     }
+    public Map<Integer, Integer> getPoints() {
+        return points;
+    }
 
-    public void addPoint(String studentName, int trainingPoint) {
-        points.put(studentName, trainingPoint);
+    public void addPoint(int studentId, int trainingPoint) {
+        points.put(studentId, trainingPoint);
     }
 
     @Override
