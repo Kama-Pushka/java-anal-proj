@@ -6,10 +6,11 @@ import java.util.Map;
 public abstract class Task {
     protected final int id;
     protected final String name;
+    protected int maxPoint;
     protected final Map<Integer, Integer> points = new HashMap<>();
 
     public Task(String name) {
-        this.id = hashCode();
+        this.id = hashCode(); // TODO из-за разного хэша одни и те же упр добавляются в бд
         this.name = name;
     }
 
@@ -19,6 +20,9 @@ public abstract class Task {
     public String getName() {
         return name;
     }
+    public int getMaxPoint() {
+        return maxPoint;
+    }
     public int getPoint(int studentId) {
         return points.get(studentId);
     }
@@ -26,6 +30,9 @@ public abstract class Task {
         return points;
     }
 
+    public void setMaxPoint(int maxPoint) {
+        this.maxPoint = maxPoint;
+    }
     public void addPoint(int studentId, int trainingPoint) {
         points.put(studentId, trainingPoint);
     }

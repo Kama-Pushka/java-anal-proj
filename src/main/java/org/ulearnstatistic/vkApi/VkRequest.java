@@ -9,7 +9,7 @@ import java.util.HashMap;
 import java.util.List;
 
 public class VkRequest {
-    public static HashMap<String, SearchResponse> searchStudentsByGroups(VkRepository vk, List<Student> students, long[] groupId) {
+    public static HashMap<String, SearchResponse> searchStudentsByGroups(VkService vk, List<Student> students, long[] groupId) {
         var studentDct = new HashMap<String, SearchResponse>(); // TODO заменить на ID
         for (var student : students) {
             var name = student.getName();

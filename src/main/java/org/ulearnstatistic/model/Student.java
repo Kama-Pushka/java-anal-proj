@@ -29,13 +29,13 @@ public class Student {
         this.id = student.id;
         this.surname = student.surname;
         this.name = student.name;
-        this.sex = Objects.equals(student.sex, "null") ? Sex.valueOf(student.sex) : null;
+        this.sex = Objects.equals(student.sex, "null") ? Sex.valueOf(student.sex) : null; // TODO затычка
         this.dateOfBirth = Calendar.getInstance();
-        dateOfBirth.setTime(student.getDateOfBirth());
+        dateOfBirth.setTime(student.getDateOfBirth()); // TODO а работает?
         this.group = student.group;
         this.country = student.country;
         this.city = student.city;
-        this.university = new University(447, student.university);
+        this.university = new University(447, student.university); // TODO ??
     }
 
     public void setName(String name) {

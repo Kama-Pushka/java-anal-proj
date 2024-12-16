@@ -23,12 +23,20 @@ public class CSVUlearnReader {
         var scanner = new Scanner(new File(path));
 
         var modules = readModules(scanner.nextLine());
-        var studentColsNum = modules.removeFirst().getNumCol();
+        var studentColsNum = modules.stream().findFirst().get().getNumCol();
+        modules.remove(0);
         var titles = scanner.nextLine().split(";");
-        var maxValues = scanner.nextLine().split(";"); // TODO использовать
+        var maxValues = Arrays.stream(scanner.nextLine().split(";")).skip(studentColsNum).toArray(String[]::new); // TODO использовать     TODO проверить!!
+
+        var titleModulesData = Arrays.copyOfRange(titles,studentColsNum,titles.length);
+        var col = 0;
+        for (var module : modules) {
+            for (var i = 0; i < module.getNumCol(); i++, col++) {
+                module.setMaxPoints(titleModulesData[col], maxValues[col]);
+            }
+        }
 
         students = new ArrayList<Student>();
-        var titleModulesData = Arrays.copyOfRange(titles,studentColsNum,titles.length);
         while (scanner.hasNextLine()) {
             var line = scanner.nextLine().split(";");
             var studentData = Arrays.copyOfRange(line,0,studentColsNum);
@@ -36,7 +44,7 @@ public class CSVUlearnReader {
 
             var student = readStudentData(titles,studentData);
             students.add(student);
-            readModulesTasksData(student,titleModulesData,modulesData,modules);
+            readModulesTasksData(student,titleModulesData,modulesData,modules,maxValues);
         }
 
         this.modules = new ArrayList<Module>();
@@ -74,7 +82,8 @@ public class CSVUlearnReader {
         return student;
     }
 
-    private void readModulesTasksData(Student student, String[] titles, String[] attrs, ArrayList<ModuleParser> modules) {
+    private void readModulesTasksData(Student student, String[] titles, String[] attrs, ArrayList<ModuleParser> modules,
+                                      String[] maxPoints) {
         var m = new ArrayDeque<ModuleParser>(modules); // TODO
         var module = m.pop();
 
@@ -86,7 +95,7 @@ public class CSVUlearnReader {
             }
 
             module.setStatistic(student.getId(), titles[i], attrs[i]); // общая статистика студента по типу задания (если это оно)
-            module.setTask(student.getId(), titles[i], attrs[i]); // статистика студента по конкретному заданию (если это оно)
+            module.setTask(student.getId(), titles[i], attrs[i], i, maxPoints); // статистика студента по конкретному заданию (если это оно)
         }
     }
 
@@ -133,14 +142,14 @@ class StudentParser {
 }
 
 class ModuleParser {
-    private static final String activityField = "Акт";
-    private static final String trainingField = "Упр";
-    private static final String practiceField = "ДЗ";
-    private static final String simenarField = "Сем";
-    private static final String cqField = "КВ";
-    private static final String trainingTaskField = "Упр:";
-    private static final String practiceTaskField = "ДЗ:";
-    private static final String cqTaskField = "КВ:";
+    private static final String activityField = "акт";
+    private static final String trainingField = "упр";
+    private static final String practiceField = "дз";
+    private static final String simenarField = "сем";
+    private static final String cqField = "кв";
+    private static final String trainingTaskField = "упр:";
+    private static final String practiceTaskField = "дз:";
+    private static final String cqTaskField = "кв:";
 
     private final int numCol;
     private final Module module;
@@ -157,12 +166,26 @@ class ModuleParser {
         return module;
     }
 
+    public void setMaxPoints(String title, String value) {
+        if (module.getMaxPoints() == null) { // TODO так то не надо
+            module.setMaxPoints(new MaxPointModuleStatistic(module.getId()));
+        }
+
+        switch (title.toLowerCase()) {
+            case trainingField -> module.getMaxPoints().setPoint("training", Integer.parseInt(value));
+            case practiceField -> module.getMaxPoints().setPoint("practice", Integer.parseInt(value));
+            case cqField -> module.getMaxPoints().setPoint("cq", Integer.parseInt(value));
+            case activityField -> module.getMaxPoints().setPoint("activity", Integer.parseInt(value));
+            case simenarField -> module.getMaxPoints().setPoint("simenar", Integer.parseInt(value));
+        }
+    }
+
     public void setStatistic(int studentId, String title, String value) {
         if (module.getStatistic(studentId) == null) {
             module.addStatistic(studentId, new ModuleStudentStatistic(module.getId(), studentId));
         }
 
-        switch (title) {
+        switch (title.toLowerCase()) {
             case trainingField -> module.getStatistic(studentId).setPoint("training", Integer.parseInt(value));
             case practiceField -> module.getStatistic(studentId).setPoint("practice", Integer.parseInt(value));
             case cqField -> module.getStatistic(studentId).setPoint("cq", Integer.parseInt(value));
@@ -171,25 +194,28 @@ class ModuleParser {
         }
     }
 
-    public void setTask(int studentId, String title, String value) {
-        if (title.toUpperCase().contains(trainingTaskField.toUpperCase())) {
-            var training = module.getTraining(title);
+    public void setTask(int studentId, String title, String value, int index, String[] maxPoints) {
+        if (title.toLowerCase().contains(trainingTaskField)) {
+            var training = module.getTraining(title + " | " + index);
             if (training == null) {
-                training = new Training(title);
+                training = new Training(title + " | " + index);
+                training.setMaxPoint(Integer.parseInt(maxPoints[index]));
                 module.addTask(training);
             }
             training.addPoint(studentId, Integer.parseInt(value));
-        } else if (title.contains(practiceTaskField)) {
-            var practice = module.getPractice(title);
+        } else if (title.toLowerCase().contains(practiceTaskField)) {
+            var practice = module.getPractice(title + " | " + index);
             if (practice == null) {
-                practice = new Practice(title);
+                practice = new Practice(title + " | " + index);
+                practice.setMaxPoint(Integer.parseInt(maxPoints[index]));
                 module.addTask(practice);
             }
             practice.addPoint(studentId, Integer.parseInt(value));
-        } else if (title.contains(cqTaskField)) {
-            var cq = module.getControlQuestions(title);
+        } else if (title.toLowerCase().contains(cqTaskField)) {
+            var cq = module.getControlQuestions(title + " | " + index);
             if (cq == null) {
-                cq = new ControlQuestion(title);
+                cq = new ControlQuestion(title + " | " + index);
+                cq.setMaxPoint(Integer.parseInt(maxPoints[index]));
                 module.addTask(cq);
             }
             cq.addPoint(studentId, Integer.parseInt(value));

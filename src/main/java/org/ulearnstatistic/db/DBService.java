@@ -7,17 +7,16 @@ import java.lang.reflect.InvocationTargetException;
 import java.sql.Connection;
 import java.sql.DriverManager;
 import java.sql.SQLException;
-import java.util.ArrayList;
-import java.util.Arrays;
-import java.util.List;
+import java.util.*;
 
 // может работать с классами, которые имеют только примитивные поля
-public class DBRepository {
+public class DBService {
     private static Connection conn;
     private static String URL = "jdbc:sqlite:data/ulearn-data.db";
 
-    public static void UpdateURL(String URL) {
-        DBRepository.URL = URL;
+    // а нужно ли простаскивать этот метод?
+    public static void updateURL(String URL) {
+        DBService.URL = "jdbc:sqlite:" + URL;
     }
 
     public static void connect() {
@@ -37,7 +36,60 @@ public class DBRepository {
         }
     }
 
-    public static void createTable(String sqlQuery) {
+    // TODO добавлено
+    public static HashMap<String, Double> getAVGForField(String sql) {
+        try(var conn = DriverManager.getConnection(URL);
+            var stmt = conn.createStatement();
+            var result = stmt.executeQuery(sql)) {
+
+            var map = new HashMap<String, Double>();
+            while (result.next()) {
+                map.put(result.getString(1), result.getDouble(2));
+            }
+            return map;
+        } catch (SQLException e) {
+            throw new RuntimeException(e);
+        }
+    }
+
+    public static Map<String, Map<String, Double>> getAVGForFieldForLineChart(String sql) {
+        try(var conn = DriverManager.getConnection(URL);
+            var stmt = conn.createStatement();
+            var result = stmt.executeQuery(sql)) {
+
+            var map = new HashMap<String, Map<String, Double>>();
+            while (result.next()) {
+                var moduleName = result.getString(1);
+                var fieldName = result.getString(2);
+                var point = result.getDouble(3);
+                if (map.get(fieldName) == null) {
+                    map.put(fieldName, new HashMap<>());
+                }
+                map.get(fieldName).put(moduleName, point);
+            }
+            return map;
+        } catch (SQLException e) {
+            throw new RuntimeException(e);
+        }
+    }
+
+    public static List<String> getDataFromTable(String sql) {
+        try(var conn = DriverManager.getConnection(URL);
+            var stmt = conn.createStatement();
+            var result = stmt.executeQuery(sql)) {
+
+            var list = new ArrayList<String>();
+            while (result.next()) {
+                list.add(result.getString(1));
+            }
+            return list;
+        } catch (SQLException e) {
+            throw new RuntimeException(e);
+        }
+    }
+    ///
+	
+	public static void createTable(String sqlQuery) {
         try(var conn = DriverManager.getConnection(URL);
             var stmt = conn.createStatement()) {
            stmt.execute(sqlQuery);
@@ -54,7 +106,7 @@ public class DBRepository {
         if (fields.length == 0) throw new IllegalArgumentException("No fields in class " + cls.getName());
 
         for (var field : fields) {
-            sql.append("\"%s\" %s NOT NULL,\n".formatted(field.getName(), getSqlType(field.getType())));
+            sql.append("\"%s\" %s NOT NULL,\n".formatted(field.getName(), getSqlType(field.getType()))); // TODO убрать NOT NULL
         }
         if (primaryKeys != null && primaryKeys.length > 0)
             sql.append("PRIMARY KEY (%s),\n".formatted(String.join(",", primaryKeys)));
@@ -102,6 +154,13 @@ public class DBRepository {
                     var field = data.getClass().getField(columns[i]).get(data);
                     field = field == null ? "null" : field.toString();
                     stmt.setObject(i+1, field);
+
+//                    var getMethod = data.getClass().getMethod(
+//                            "get%s".formatted(columns[i].substring(0, 1).toUpperCase() + columns[i].substring(1)));
+//                    var resultRaw = getMethod.invoke(data);
+//                    resultRaw = resultRaw == null ? "null" : resultRaw.toString();
+//                    //var result = getMethod.getReturnType().cast(resultRaw);
+//                    stmt.setObject(i+1, resultRaw);
                 }
                 stmt.executeUpdate();
                 System.out.println("Table updated.");
@@ -112,8 +171,8 @@ public class DBRepository {
             }
         }
     }
-
-    public static Pair<String, String[]> getDataFromTableQuery(Class<?> cls) {
+	
+	public static Pair<String, String[]> getDataFromTableQuery(Class<?> cls) {
         var fields = cls.getDeclaredFields();
         if (fields.length == 0) throw new IllegalArgumentException("No fields in class " + cls.getName());
 
@@ -148,6 +207,34 @@ public class DBRepository {
             return objs;
         } catch (SQLException | InstantiationException | IllegalAccessException | NoSuchMethodException |
                  InvocationTargetException | NoSuchFieldException e) {
+            throw new RuntimeException(e);
+        }
+    }
+	
+	public static List<?> getDataFromTableOLD(String sqlQuery, Class<?> cls, String[] columns) {
+        try(var conn = DriverManager.getConnection(URL);
+            var stmt = conn.createStatement();
+            var result = stmt.executeQuery(sqlQuery)) {
+            var objs = new ArrayList<>();
+
+            while (result.next()) {
+                var obj = cls.getConstructor().newInstance();
+                var fields = obj.getClass().getDeclaredFields();
+                if (fields.length == 0) throw new IllegalArgumentException("No fields in class " + cls.getName());
+
+                for (var field : columns) {
+                    var test = "set%s".formatted(field.substring(0, 1).toUpperCase() + field.substring(1));
+                    var setMethod = Arrays.stream(obj.getClass().getDeclaredMethods()).filter(m -> m.getName().equals(test)).findFirst().get();
+                    //var type = Arrays.stream(setMethod.getParameterTypes()).findFirst();
+                    var test1 = result.getObject(field);
+                    if (test1.equals("null")) continue;
+                    setMethod.invoke(obj, test1);
+                }
+                objs.add(obj);
+            }
+            return objs;
+        } catch (SQLException | InstantiationException | IllegalAccessException | NoSuchMethodException |
+                 InvocationTargetException e) {
             throw new RuntimeException(e);
         }
     }
