@@ -16,7 +16,7 @@ public class StudentEntity {
     public String group;
     public String country;
     public String city;
-    public String university;
+    public String university; // TODO ??
 
     public StudentEntity() {}
 

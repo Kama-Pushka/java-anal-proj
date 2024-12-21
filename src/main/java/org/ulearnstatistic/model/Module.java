@@ -8,16 +8,20 @@ import java.util.Objects;
 public class Module {
     private final int id;
     private final String name;
+    private MaxPointModuleStatistic maxPoints;
     private final Map<Integer, ModuleStudentStatistic> statistics = new HashMap<>(); // TODO переделать?
     private final ArrayList<Training> trainings = new ArrayList<>();
     private final ArrayList<Practice> practices =  new ArrayList<>();
     private final ArrayList<ControlQuestion> cq =  new ArrayList<>();
 
-    public Module(String name) {
+    public Module(String name, int id) {
         this.name = name;
-        this.id = hashCode();
+        this.id = id;
     }
 
+    public void setMaxPoints(MaxPointModuleStatistic maxPoints) {
+        this.maxPoints = maxPoints;
+    }
     public void addStatistic(int studentId, ModuleStudentStatistic statistic) {
         statistics.put(studentId, statistic);
     }
@@ -36,6 +40,9 @@ public class Module {
     }
     public String getName() {
         return name;
+    }
+    public MaxPointModuleStatistic getMaxPoints() {
+        return maxPoints;
     }
     public ModuleStudentStatistic getStatistic(int id) {
         return statistics.get(id);
