@@ -1,17 +1,25 @@
 package org.ulearnstatistic.model;
 
+import java.text.DateFormat;
+import java.text.SimpleDateFormat;
+import java.time.LocalDate;
+import java.util.Calendar;
+import java.util.Date;
+
 public class Student {
     private final int id;
     private String surname;
     private String name;
     private Sex sex;
+    private Calendar dateOfBirth;
     private int age;
     private String group; // TODO в отдельный класс?
     private String country;
     private String city;
+    private University university;
 
     public Student() {
-        id = hashCode(); // ??
+        id = System.identityHashCode(this); // TODO ??
     }
 
     public void setName(String name) {
@@ -23,9 +31,9 @@ public class Student {
     public void setSex(Sex sex) {
         this.sex = sex;
     }
-    public void setAge(int age) {
-        this.age = age;
-    }
+    //public void setAge(int age) {
+    //    this.age = age;
+    //}
     public void setGroup(String group) {
         this.group = group;
     }
@@ -34,6 +42,13 @@ public class Student {
     }
     public void setCity(String city) {
         this.city = city;
+    }
+    public void setUniversity(University university) {
+        this.university = university;
+    }
+    public void setDateOfBirth(int day, int month, int year) {
+        this.dateOfBirth = Calendar.getInstance();
+        dateOfBirth.set(day,month,year);
     }
 
     public int getId() {
@@ -48,8 +63,14 @@ public class Student {
     public Sex getSex() {
         return sex;
     }
+    public Calendar getDateOfBirth() {
+        return dateOfBirth;
+    }
     public int getAge() {
-        return age;
+        if (dateOfBirth == null) return 0;
+
+        if (dateOfBirth.get(Calendar.YEAR) == 0) return 0; // TODO
+        return LocalDate.now().getYear() - dateOfBirth.get(Calendar.YEAR); // TODO
     }
     public String getGroup() {
         return group;
@@ -60,9 +81,25 @@ public class Student {
     public String getCity() {
         return city;
     }
+    public University getUniversity() {
+        return university;
+    }
 
     @Override
     public String toString() {
         return "%s".formatted(name); // TODO парсинг для surname
+    }
+
+    @Override
+    public boolean equals(Object o) {
+        if (this == o) return true;
+        if (o == null || getClass() != o.getClass()) return false;
+        Student student = (Student) o;
+        return id == student.id;
+    }
+
+    @Override
+    public int hashCode() {
+        return id;
     }
 }

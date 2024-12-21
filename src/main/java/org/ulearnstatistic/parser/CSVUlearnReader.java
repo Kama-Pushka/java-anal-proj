@@ -28,11 +28,11 @@ public class CSVUlearnReader {
         var maxValues = scanner.nextLine().split(";"); // TODO использовать
 
         students = new ArrayList<Student>();
+        var titleModulesData = Arrays.copyOfRange(titles,studentColsNum,titles.length);
         while (scanner.hasNextLine()) {
             var line = scanner.nextLine().split(";");
             var studentData = Arrays.copyOfRange(line,0,studentColsNum);
             var modulesData = Arrays.copyOfRange(line,studentColsNum,line.length);
-            var titleModulesData = Arrays.copyOfRange(titles,studentColsNum,titles.length); // TODO
 
             var student = readStudentData(titles,studentData);
             students.add(student);
@@ -90,12 +90,26 @@ public class CSVUlearnReader {
         }
     }
 
-    public void write(String path) throws IOException {
+    public void write(String path, boolean writeStudents, boolean writeModules) throws IOException {
         var write = new StringBuilder();
         var stud = students.toArray();
         var mod = modules.toArray();
-        write.append("Students: %d\n%s".formatted(stud.length, Arrays.toString(stud)));
-        write.append("\nModules: %d\n%s".formatted(mod.length, Arrays.toString(mod)));
+        if (writeStudents) {
+            //write.append("Students: %d\n%s".formatted(stud.length, Arrays.toString(stud)));
+            for (var student : students) {
+                write.append("%s %s:\n\tПол: %s\n\tВозраст: %s (%s)\n\tГруппа: %s\n\tСтрана: %s\n\tГород: %s\n\tУниверситет: %s\n"
+                        .formatted(student.getName(), student.getSurname() != null ? student.getSurname() : "",
+                        student.getSex() != null ? student.getSex().name() : 0,
+                        student.getAge(), student.getDateOfBirth() != null ? student.getDateOfBirth() : "",
+                        student.getGroup() != null ? student.getGroup() : "",
+                        student.getCountry() != null ? student.getCountry() : "",
+                        student.getCity() != null ? student.getCity() : "",
+                        student.getUniversity() != null ? student.getUniversity().Name() : ""));
+            }
+        }
+        if (writeModules) {
+            write.append("\nModules: %d\n%s".formatted(mod.length, Arrays.toString(mod)));
+        }
 
         try (var report = new FileWriter(path)) {
             report.write(write.toString());
@@ -158,7 +172,7 @@ class ModuleParser {
     }
 
     public void setTask(String studentName, String title, String value) {
-        if (title.contains(trainingTaskField)) { // TODO IgnoreCase
+        if (title.toUpperCase().contains(trainingTaskField.toUpperCase())) {
             var training = module.getTraining(title);
             if (training == null) {
                 training = new Training(title);
