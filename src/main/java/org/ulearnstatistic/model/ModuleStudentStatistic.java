@@ -24,6 +24,12 @@ public class ModuleStudentStatistic {
         }
     }
 
+    public int getModuleId() {
+        return moduleId;
+    }
+    public int getStudentId() {
+        return studentId;
+    }
     public int getTrainingPoint() {
         return trainingPoint;
     }

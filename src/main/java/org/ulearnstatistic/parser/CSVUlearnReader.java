@@ -86,7 +86,7 @@ public class CSVUlearnReader {
             }
 
             module.setStatistic(student.getId(), titles[i], attrs[i]); // общая статистика студента по типу задания (если это оно)
-            module.setTask(student.getName(), titles[i], attrs[i]); // статистика студента по конкретному заданию (если это оно)
+            module.setTask(student.getId(), titles[i], attrs[i]); // статистика студента по конкретному заданию (если это оно)
         }
     }
 
@@ -99,12 +99,12 @@ public class CSVUlearnReader {
             for (var student : students) {
                 write.append("%s %s:\n\tПол: %s\n\tВозраст: %s (%s)\n\tГруппа: %s\n\tСтрана: %s\n\tГород: %s\n\tУниверситет: %s\n"
                         .formatted(student.getName(), student.getSurname() != null ? student.getSurname() : "",
-                        student.getSex() != null ? student.getSex().name() : 0,
-                        student.getAge(), student.getDateOfBirth() != null ? student.getDateOfBirth() : "",
-                        student.getGroup() != null ? student.getGroup() : "",
-                        student.getCountry() != null ? student.getCountry() : "",
-                        student.getCity() != null ? student.getCity() : "",
-                        student.getUniversity() != null ? student.getUniversity().Name() : ""));
+                                student.getSex() != null ? student.getSex().name() : 0,
+                                student.getAge(), student.getDateOfBirth() != null ? student.getDateOfBirth() : "",
+                                student.getGroup() != null ? student.getGroup() : "",
+                                student.getCountry() != null ? student.getCountry() : "",
+                                student.getCity() != null ? student.getCity() : "",
+                                student.getUniversity() != null ? student.getUniversity().Name() : ""));
             }
         }
         if (writeModules) {
@@ -171,28 +171,28 @@ class ModuleParser {
         }
     }
 
-    public void setTask(String studentName, String title, String value) {
+    public void setTask(int studentId, String title, String value) {
         if (title.toUpperCase().contains(trainingTaskField.toUpperCase())) {
             var training = module.getTraining(title);
             if (training == null) {
                 training = new Training(title);
                 module.addTask(training);
             }
-            training.addPoint(studentName, Integer.parseInt(value)); // TODO student.getId()
+            training.addPoint(studentId, Integer.parseInt(value));
         } else if (title.contains(practiceTaskField)) {
             var practice = module.getPractice(title);
             if (practice == null) {
                 practice = new Practice(title);
                 module.addTask(practice);
             }
-            practice.addPoint(studentName, Integer.parseInt(value)); // TODO student.getId()
+            practice.addPoint(studentId, Integer.parseInt(value));
         } else if (title.contains(cqTaskField)) {
             var cq = module.getControlQuestions(title);
             if (cq == null) {
                 cq = new ControlQuestion(title);
                 module.addTask(cq);
             }
-            cq.addPoint(studentName, Integer.parseInt(value)); // TODO student.getId()
+            cq.addPoint(studentId, Integer.parseInt(value));
         }
     }
 }
