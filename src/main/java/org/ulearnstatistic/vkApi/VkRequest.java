@@ -9,6 +9,14 @@ import java.util.HashMap;
 import java.util.List;
 
 public class VkRequest {
+
+    /**
+     * Поиск студентов в ВК по их имени в указанных группах
+     * @param vk Эзмепляр VkService
+     * @param students Список студентов для поиска
+     * @param groupId Список групп, в которых будет происходить поиск студентов
+     * @return HashMap, где ключом выступает имя студента, а значение - все найденные пользователи
+     */
     public static HashMap<String, SearchResponse> searchStudentsByGroups(VkService vk, List<Student> students, long[] groupId) {
         var studentDct = new HashMap<String, SearchResponse>(); // TODO заменить на ID
         for (var student : students) {

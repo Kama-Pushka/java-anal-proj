@@ -9,7 +9,11 @@ import java.sql.DriverManager;
 import java.sql.SQLException;
 import java.util.*;
 
-// может работать с классами, которые имеют только примитивные поля
+/**
+ * Предупреждение: Данный класс работы с базой данных может обрабатывать только с пользовательские классы,
+ * которые имеют ТОЛЬКО примитивные поля. Если в классе существуют иные непримитивные поля (даже private), их необходимо исключить,
+ * либо создать их отдельный класс для работы с БД.
+ */
 public class DBService {
     private static Connection conn;
     private static String URL = "jdbc:sqlite:data/ulearn-data.db";
@@ -36,59 +40,34 @@ public class DBService {
         }
     }
 
-    // TODO добавлено
-    public static HashMap<String, Double> getAVGForField(String sql) {
-        try(var conn = DriverManager.getConnection(URL);
-            var stmt = conn.createStatement();
-            var result = stmt.executeQuery(sql)) {
-
-            var map = new HashMap<String, Double>();
-            while (result.next()) {
-                map.put(result.getString(1), result.getDouble(2));
-            }
-            return map;
-        } catch (SQLException e) {
-            throw new RuntimeException(e);
-        }
-    }
-
-    public static Map<String, Map<String, Double>> getAVGForFieldForLineChart(String sql) {
-        try(var conn = DriverManager.getConnection(URL);
-            var stmt = conn.createStatement();
-            var result = stmt.executeQuery(sql)) {
-
-            var map = new HashMap<String, Map<String, Double>>();
-            while (result.next()) {
-                var moduleName = result.getString(1);
-                var fieldName = result.getString(2);
-                var point = result.getDouble(3);
-                if (map.get(fieldName) == null) {
-                    map.put(fieldName, new HashMap<>());
-                }
-                map.get(fieldName).put(moduleName, point);
-            }
-            return map;
-        } catch (SQLException e) {
-            throw new RuntimeException(e);
-        }
-    }
-
+    /**
+     * Получить информацию из таблицы по средствам SELECT SQL запроса
+     * @param sql SQL-запрос, основанный на операторе SELECT
+     * @return Список строк полученной информации. Отдельные атрибуты разделены знаком "||"
+     */
     public static List<String> getDataFromTable(String sql) {
         try(var conn = DriverManager.getConnection(URL);
             var stmt = conn.createStatement();
             var result = stmt.executeQuery(sql)) {
 
             var list = new ArrayList<String>();
+            var colNums = result.getMetaData().getColumnCount() + 1;
             while (result.next()) {
-                list.add(result.getString(1));
+                var str = new StringBuilder(result.getString(1));
+                for (var i = 2; i < colNums; i++)
+                    str.append("||").append(result.getString(i));
+                list.add(str.toString());
             }
             return list;
         } catch (SQLException e) {
             throw new RuntimeException(e);
         }
     }
-    ///
-	
+
+    /**
+     * Создание таблицы.
+     * @param sqlQuery SQL-запрос состоящий из запроса на создание таблицы
+     */
 	public static void createTable(String sqlQuery) {
         try(var conn = DriverManager.getConnection(URL);
             var stmt = conn.createStatement()) {
@@ -99,7 +78,14 @@ public class DBService {
         }
     }
 
-    // первое по порядку поле дожно быть ключевым
+    /**
+     * Формирование SQL запроса для создания таблицы по всем полям класса (в т.ч. private)
+     * @param cls Класс, поля которого станут колонками
+     * @param primaryKeys Ключевые атрибуты - названия полей класса
+     * @param foreignKeys Внешние ключи - название полей класса, таблицы, с которой создается связь
+     *                    и название колонок той таблицы, на которые создаются ссылки
+     * @return SQL-запрос
+     */
     public static String getCreateTableQuery(Class<?> cls, String[] primaryKeys, Triple<String, String, String>[] foreignKeys) {
         var sql = new StringBuilder("CREATE TABLE IF NOT EXISTS %s(\n".formatted(cls.getSimpleName()));
         var fields = cls.getDeclaredFields();
@@ -129,6 +115,11 @@ public class DBService {
         return "VARCHAR(255)";
     }
 
+    /**
+     * Формирование запроса на сохранение всех полей модели в таблицу
+     * @param cls Класс, поля которого будут сохранены
+     * @return SQL-запрос и список колонок, которые будут сохранены в таблицу
+     */
     public static Pair<String, String[]> getSaveIntoTableQuery(Class<?> cls) {
         var fields = cls.getDeclaredFields();
         if (fields.length == 0) throw new IllegalArgumentException("No fields in class " + cls.getName());
@@ -146,32 +137,47 @@ public class DBService {
     }
 
     // колонки должны идти в том же порядке, в котором указаны в sql запросе
+
+    /**
+     * Сохранить информацию из моделей в таблицу.
+     * @param sqlQuery SQL-запрос на добавление данных в таблицу.
+     * @param datas Модели, которые необходимо сохранить
+     * @param columns Колонки, которые должны быть сохранены.
+     *                Колонки должны совпадать с колонками, указанными в SQL-запросе
+     */
     public static void saveIntoTable(String sqlQuery, List<?> datas, String[] columns) {
-        for (var data : datas) {
-            try(var conn = DriverManager.getConnection(URL);
-                var stmt = conn.prepareStatement(sqlQuery)) {
+        try(var conn = DriverManager.getConnection(URL);
+            var stmt = conn.prepareStatement(sqlQuery)) {
+            var j = 0;
+            conn.setAutoCommit(false);
+            for (var data : datas) {
                 for (var i = 0; i < columns.length; i++) {
                     var field = data.getClass().getField(columns[i]).get(data);
                     field = field == null ? "null" : field.toString();
                     stmt.setObject(i+1, field);
-
-//                    var getMethod = data.getClass().getMethod(
-//                            "get%s".formatted(columns[i].substring(0, 1).toUpperCase() + columns[i].substring(1)));
-//                    var resultRaw = getMethod.invoke(data);
-//                    resultRaw = resultRaw == null ? "null" : resultRaw.toString();
-//                    //var result = getMethod.getReturnType().cast(resultRaw);
-//                    stmt.setObject(i+1, resultRaw);
                 }
-                stmt.executeUpdate();
-                System.out.println("Table updated.");
-            } catch (SQLException e) {
-                System.out.println(e.getMessage());
-            } catch (IllegalAccessException | NoSuchFieldException e) {
-                throw new RuntimeException(e);
+                stmt.addBatch();
+                System.out.println("Table is being prepared to update.");
+                j++;
+
+                if (j % 1000 == 0 || j == datas.size()) {
+                    stmt.executeBatch();
+                    conn.commit();
+                    System.out.println("Table FINALLY updated.");
+                }
             }
+        } catch (SQLException e) {
+            System.out.println(e.getMessage());
+        } catch (IllegalAccessException | NoSuchFieldException e) {
+            throw new RuntimeException(e);
         }
     }
-	
+
+    /**
+     * Формирование SQL-запрос на получение всех данных из таблицы.
+     * @param cls Класс, информацию о котором хотим получить из соотвествующей таблицы
+     * @return SQL-запрос и колонки, в которые будут записываться данные
+     */
 	public static Pair<String, String[]> getDataFromTableQuery(Class<?> cls) {
         var fields = cls.getDeclaredFields();
         if (fields.length == 0) throw new IllegalArgumentException("No fields in class " + cls.getName());
@@ -185,6 +191,14 @@ public class DBService {
                 columns.toString().replace("\"","").split(","));
     }
 
+    /**
+     * Получение всех данных из таблицы
+     * @param sqlQuery SQL-запрос на получение данных из таблицы
+     * @param cls Класс, в который будем сохранять полученные данные
+     * @param columns Колонки, в которые будут сохраняться полученные данные.
+     *                Колонки должны совпадать с колонками, указанными в SQL-запросе
+     * @return
+     */
     public static List<?> getDataFromTable(String sqlQuery, Class<?> cls, String[] columns) {
         try(var conn = DriverManager.getConnection(URL);
             var stmt = conn.createStatement();
@@ -210,7 +224,10 @@ public class DBService {
             throw new RuntimeException(e);
         }
     }
-	
+
+    /**
+     * НЕ ИСПОЛЬЗУЕТСЯ
+     */
 	public static List<?> getDataFromTableOLD(String sqlQuery, Class<?> cls, String[] columns) {
         try(var conn = DriverManager.getConnection(URL);
             var stmt = conn.createStatement();

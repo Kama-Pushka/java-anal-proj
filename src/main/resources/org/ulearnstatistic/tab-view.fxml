@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="750.0" prefWidth="1002.0" xmlns="http://javafx.com/javafx/17.0.2-ea">
+    <Pane id="chartsHere" layoutX="27.0" layoutY="49.0" prefHeight="550.0" prefWidth="1185.0" style="-fx-background-color: E9E9E9;" />
+   <FlowPane layoutX="29.0" layoutY="11.0" prefHeight="35.0" prefWidth="755.0">
+      <children>
+          <ButtonBar id="graphicTypeButtons" nodeOrientation="RIGHT_TO_LEFT" prefHeight="35.0" prefWidth="403.0">
+              <buttons>
+                  <Button id="cityButton" mnemonicParsing="false" text="city" />
+                  <Button id="groupButton" mnemonicParsing="false" text="group" />
+                  <Button id="sexButton" mnemonicParsing="false" text="sex" />
+                  <Button id="mainButton" mnemonicParsing="false" text="main" />
+              </buttons>
+          </ButtonBar>
+         <CheckBox id="maxButton" mnemonicParsing="false" text="max" />
+      </children>
+   </FlowPane>
+    <ButtonBar id="bottomButtons" layoutX="210.0" layoutY="600.0" nodeOrientation="RIGHT_TO_LEFT" prefHeight="40.0" prefWidth="423.0">
+        <buttons>
+            <Button id="cqButton" mnemonicParsing="false" text="CQ" />
+            <Button id="practiceButton" mnemonicParsing="false" text="Practice" />
+            <Button id="trainingButton" mnemonicParsing="false" prefHeight="26.0" prefWidth="92.0" text="Training" />
+        </buttons>
+    </ButtonBar>
+    <ChoiceBox id="choiceModule" layoutX="29.0" layoutY="607.0" prefWidth="150.0" />
+   <AnchorPane layoutX="836.0" layoutY="11.0" nodeOrientation="LEFT_TO_RIGHT" prefHeight="35.0" prefWidth="307.0">
+      <children>
+          <Button id="filterButton" layoutX="277.0" layoutY="5.0" mnemonicParsing="false" text="filter" />
+         <ChoiceBox id="filterType" layoutX="174.0" layoutY="5.0" prefHeight="26.0" prefWidth="96.0" />
+         <TextField id="filterCriteria" layoutX="16.0" layoutY="5.0" />
+      </children>
+   </AnchorPane>
+</AnchorPane>

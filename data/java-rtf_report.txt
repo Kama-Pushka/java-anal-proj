@@ -1,0 +1,644 @@
+Аль-Мамари Фатма Халиед Нассер Салех :
+	Пол: 0
+	Возраст: 0 ()
+	Группа: Программирование на Java ЛБ, АТ-01
+	Страна: 
+	Город: 
+	Университет: 
+Болдецкий Артём :
+	Пол: 0
+	Возраст: 0 ()
+	Группа: Программирование на Java ЛБ, АТ-01
+	Страна: 
+	Город: 
+	Университет: 
+Игорь Бородин:
+	Пол: MALE
+	Возраст: 0 ()
+	Группа: Программирование на Java ЛБ, АТ-01
+	Страна: 
+	Город: 
+	Университет: УрФУ им. первого Президента России Б. Н. Ельцина
+Матвей Волохов:
+	Пол: MALE
+	Возраст: 1997 (java.util.GregorianCalendar[time=-61297092800821,areFieldsSet=true,areAllFieldsSet=true,lenient=true,zone=sun.util.calendar.ZoneInfo[id="Asia/Yekaterinburg",offset=18000000,dstSavings=0,useDaylight=false,transitions=68,lastRule=null],firstDayOfWeek=2,minimalDaysInFirstWeek=4,ERA=1,YEAR=27,MONTH=6,WEEK_OF_YEAR=31,WEEK_OF_MONTH=5,DAY_OF_MONTH=31,DAY_OF_YEAR=212,DAY_OF_WEEK=5,DAY_OF_WEEK_IN_MONTH=5,AM_PM=0,HOUR=2,HOUR_OF_DAY=2,MINUTE=46,SECOND=39,MILLISECOND=179,ZONE_OFFSET=18000000,DST_OFFSET=0])
+	Группа: Программирование на Java ЛБ, АТ-01
+	Страна: 
+	Город: 
+	Университет: 
+Григорий Глазырин:
+	Пол: MALE
+	Возраст: 2018 (java.util.GregorianCalendar[time=-61954942400813,areFieldsSet=true,areAllFieldsSet=true,lenient=true,zone=sun.util.calendar.ZoneInfo[id="Asia/Yekaterinburg",offset=18000000,dstSavings=0,useDaylight=false,transitions=68,lastRule=null],firstDayOfWeek=2,minimalDaysInFirstWeek=4,ERA=1,YEAR=6,MONTH=8,WEEK_OF_YEAR=38,WEEK_OF_MONTH=4,DAY_OF_MONTH=25,DAY_OF_YEAR=268,DAY_OF_WEEK=7,DAY_OF_WEEK_IN_MONTH=4,AM_PM=0,HOUR=2,HOUR_OF_DAY=2,MINUTE=46,SECOND=39,MILLISECOND=187,ZONE_OFFSET=18000000,DST_OFFSET=0])
+	Группа: Программирование на Java ЛБ, АТ-01
+	Страна: 
+	Город: Березовский
+	Университет: УрФУ им. первого Президента России Б. Н. Ельцина
+Дарья Глебова:
+	Пол: FEMALE
+	Возраст: 1994 (java.util.GregorianCalendar[time=-61200238400813,areFieldsSet=true,areAllFieldsSet=true,lenient=true,zone=sun.util.calendar.ZoneInfo[id="Asia/Yekaterinburg",offset=18000000,dstSavings=0,useDaylight=false,transitions=68,lastRule=null],firstDayOfWeek=2,minimalDaysInFirstWeek=4,ERA=1,YEAR=30,MONTH=7,WEEK_OF_YEAR=34,WEEK_OF_MONTH=4,DAY_OF_MONTH=25,DAY_OF_YEAR=237,DAY_OF_WEEK=6,DAY_OF_WEEK_IN_MONTH=4,AM_PM=0,HOUR=2,HOUR_OF_DAY=2,MINUTE=46,SECOND=39,MILLISECOND=187,ZONE_OFFSET=18000000,DST_OFFSET=0])
+	Группа: Программирование на Java ЛБ, АТ-01
+	Страна: 
+	Город: Новоуральск
+	Университет: УрФУ им. первого Президента России Б. Н. Ельцина
+Достовалова Мария :
+	Пол: 0
+	Возраст: 0 ()
+	Группа: Программирование на Java ЛБ, АТ-01
+	Страна: 
+	Город: 
+	Университет: 
+Никита Дюпин:
+	Пол: MALE
+	Возраст: 1995 (java.util.GregorianCalendar[time=-61221233600813,areFieldsSet=true,areAllFieldsSet=true,lenient=true,zone=sun.util.calendar.ZoneInfo[id="Asia/Yekaterinburg",offset=18000000,dstSavings=0,useDaylight=false,transitions=68,lastRule=null],firstDayOfWeek=2,minimalDaysInFirstWeek=4,ERA=1,YEAR=29,MONTH=11,WEEK_OF_YEAR=51,WEEK_OF_MONTH=4,DAY_OF_MONTH=25,DAY_OF_YEAR=359,DAY_OF_WEEK=1,DAY_OF_WEEK_IN_MONTH=4,AM_PM=0,HOUR=2,HOUR_OF_DAY=2,MINUTE=46,SECOND=39,MILLISECOND=187,ZONE_OFFSET=18000000,DST_OFFSET=0])
+	Группа: Программирование на Java ЛБ, АТ-01
+	Страна: 
+	Город: 
+	Университет: УрФУ им. первого Президента России Б. Н. Ельцина
+Кирилл Егоров:
+	Пол: MALE
+	Возраст: 1989 (java.util.GregorianCalendar[time=-61061048000813,areFieldsSet=true,areAllFieldsSet=true,lenient=true,zone=sun.util.calendar.ZoneInfo[id="Asia/Yekaterinburg",offset=18000000,dstSavings=0,useDaylight=false,transitions=68,lastRule=null],firstDayOfWeek=2,minimalDaysInFirstWeek=4,ERA=1,YEAR=35,MONTH=0,WEEK_OF_YEAR=3,WEEK_OF_MONTH=3,DAY_OF_MONTH=22,DAY_OF_YEAR=22,DAY_OF_WEEK=7,DAY_OF_WEEK_IN_MONTH=4,AM_PM=0,HOUR=2,HOUR_OF_DAY=2,MINUTE=46,SECOND=39,MILLISECOND=187,ZONE_OFFSET=18000000,DST_OFFSET=0])
+	Группа: Программирование на Java ЛБ, АТ-01
+	Страна: 
+	Город: 
+	Университет: УрФУ им. первого Президента России Б. Н. Ельцина
+Житомирский Марк :
+	Пол: 0
+	Возраст: 0 ()
+	Группа: Программирование на Java ЛБ, АТ-01
+	Страна: 
+	Город: 
+	Университет: 
+Захаров Данил :
+	Пол: 0
+	Возраст: 0 ()
+	Группа: Программирование на Java ЛБ, АТ-01
+	Страна: 
+	Город: 
+	Университет: 
+Касьянов Анатолий :
+	Пол: 0
+	Возраст: 0 ()
+	Группа: Программирование на Java ЛБ, АТ-01
+	Страна: 
+	Город: 
+	Университет: 
+Колмаков Кирилл :
+	Пол: 0
+	Возраст: 0 ()
+	Группа: Программирование на Java ЛБ, АТ-01
+	Страна: 
+	Город: 
+	Университет: 
+Лошаков Данил :
+	Пол: 0
+	Возраст: 0 ()
+	Группа: Программирование на Java ЛБ, АТ-01
+	Страна: 
+	Город: 
+	Университет: 
+Отставнов Михаил :
+	Пол: 0
+	Возраст: 0 ()
+	Группа: Программирование на Java ЛБ, АТ-01
+	Страна: 
+	Город: 
+	Университет: 
+Евгений Петряков:
+	Пол: MALE
+	Возраст: 2013 (java.util.GregorianCalendar[time=-61807630400813,areFieldsSet=true,areAllFieldsSet=true,lenient=true,zone=sun.util.calendar.ZoneInfo[id="Asia/Yekaterinburg",offset=18000000,dstSavings=0,useDaylight=false,transitions=68,lastRule=null],firstDayOfWeek=2,minimalDaysInFirstWeek=4,ERA=1,YEAR=11,MONTH=4,WEEK_OF_YEAR=22,WEEK_OF_MONTH=4,DAY_OF_MONTH=27,DAY_OF_YEAR=147,DAY_OF_WEEK=4,DAY_OF_WEEK_IN_MONTH=4,AM_PM=0,HOUR=2,HOUR_OF_DAY=2,MINUTE=46,SECOND=39,MILLISECOND=187,ZONE_OFFSET=18000000,DST_OFFSET=0])
+	Группа: Программирование на Java ЛБ, АТ-01
+	Страна: 
+	Город: 
+	Университет: УрФУ им. первого Президента России Б. Н. Ельцина
+Потопаева Анастасия :
+	Пол: 0
+	Возраст: 0 ()
+	Группа: Программирование на Java ЛБ, АТ-01
+	Страна: 
+	Город: 
+	Университет: 
+Савилов Семён :
+	Пол: 0
+	Возраст: 0 ()
+	Группа: Программирование на Java ЛБ, АТ-01
+	Страна: 
+	Город: 
+	Университет: 
+Данил Серафим:
+	Пол: MALE
+	Возраст: 1995 (java.util.GregorianCalendar[time=-61244907200813,areFieldsSet=true,areAllFieldsSet=true,lenient=true,zone=sun.util.calendar.ZoneInfo[id="Asia/Yekaterinburg",offset=18000000,dstSavings=0,useDaylight=false,transitions=68,lastRule=null],firstDayOfWeek=2,minimalDaysInFirstWeek=4,ERA=1,YEAR=29,MONTH=2,WEEK_OF_YEAR=12,WEEK_OF_MONTH=4,DAY_OF_MONTH=26,DAY_OF_YEAR=85,DAY_OF_WEEK=7,DAY_OF_WEEK_IN_MONTH=4,AM_PM=0,HOUR=2,HOUR_OF_DAY=2,MINUTE=46,SECOND=39,MILLISECOND=187,ZONE_OFFSET=18000000,DST_OFFSET=0])
+	Группа: Программирование на Java ЛБ, АТ-01
+	Страна: 
+	Город: 
+	Университет: 
+Алексей Солдатов:
+	Пол: MALE
+	Возраст: 0 ()
+	Группа: Программирование на Java ЛБ, АТ-01
+	Страна: 
+	Город: 
+	Университет: УрФУ им. первого Президента России Б. Н. Ельцина
+Франк Александр :
+	Пол: 0
+	Возраст: 0 ()
+	Группа: Программирование на Java ЛБ, АТ-01
+	Страна: 
+	Город: 
+	Университет: 
+Хакимов Зафар :
+	Пол: 0
+	Возраст: 0 ()
+	Группа: Программирование на Java ЛБ, АТ-01
+	Страна: 
+	Город: 
+	Университет: 
+GukStepan :
+	Пол: 0
+	Возраст: 0 ()
+	Группа: Программирование на Java ЛБ, АТ-02
+	Страна: 
+	Город: 
+	Университет: 
+Абухарун Абдельрахман Мустафа Абделлах :
+	Пол: 0
+	Возраст: 0 ()
+	Группа: Программирование на Java ЛБ, АТ-02
+	Страна: 
+	Город: 
+	Университет: 
+Алейникова  Валерия :
+	Пол: 0
+	Возраст: 0 ()
+	Группа: Программирование на Java ЛБ, АТ-02
+	Страна: 
+	Город: 
+	Университет: 
+Никита Бабкин:
+	Пол: MALE
+	Возраст: 2008 (java.util.GregorianCalendar[time=-61649864000813,areFieldsSet=true,areAllFieldsSet=true,lenient=true,zone=sun.util.calendar.ZoneInfo[id="Asia/Yekaterinburg",offset=18000000,dstSavings=0,useDaylight=false,transitions=68,lastRule=null],firstDayOfWeek=2,minimalDaysInFirstWeek=4,ERA=1,YEAR=16,MONTH=4,WEEK_OF_YEAR=22,WEEK_OF_MONTH=4,DAY_OF_MONTH=26,DAY_OF_YEAR=147,DAY_OF_WEEK=3,DAY_OF_WEEK_IN_MONTH=4,AM_PM=0,HOUR=2,HOUR_OF_DAY=2,MINUTE=46,SECOND=39,MILLISECOND=187,ZONE_OFFSET=18000000,DST_OFFSET=0])
+	Группа: Программирование на Java ЛБ, АТ-02
+	Страна: 
+	Город: 
+	Университет: УрФУ им. первого Президента России Б. Н. Ельцина
+Денис Батршин:
+	Пол: MALE
+	Возраст: 1995 (java.util.GregorianCalendar[time=-61239636800813,areFieldsSet=true,areAllFieldsSet=true,lenient=true,zone=sun.util.calendar.ZoneInfo[id="Asia/Yekaterinburg",offset=18000000,dstSavings=0,useDaylight=false,transitions=68,lastRule=null],firstDayOfWeek=2,minimalDaysInFirstWeek=4,ERA=1,YEAR=29,MONTH=4,WEEK_OF_YEAR=21,WEEK_OF_MONTH=4,DAY_OF_MONTH=26,DAY_OF_YEAR=146,DAY_OF_WEEK=5,DAY_OF_WEEK_IN_MONTH=4,AM_PM=0,HOUR=2,HOUR_OF_DAY=2,MINUTE=46,SECOND=39,MILLISECOND=187,ZONE_OFFSET=18000000,DST_OFFSET=0])
+	Группа: Программирование на Java ЛБ, АТ-02
+	Страна: 
+	Город: 
+	Университет: УрФУ им. первого Президента России Б. Н. Ельцина
+Бедия Салах-Еддин :
+	Пол: 0
+	Возраст: 0 ()
+	Группа: Программирование на Java ЛБ, АТ-02
+	Страна: 
+	Город: 
+	Университет: 
+Настя Безе:
+	Пол: FEMALE
+	Возраст: 2017 (java.util.GregorianCalendar[time=-61933515200813,areFieldsSet=true,areAllFieldsSet=true,lenient=true,zone=sun.util.calendar.ZoneInfo[id="Asia/Yekaterinburg",offset=18000000,dstSavings=0,useDaylight=false,transitions=68,lastRule=null],firstDayOfWeek=2,minimalDaysInFirstWeek=4,ERA=1,YEAR=7,MONTH=4,WEEK_OF_YEAR=22,WEEK_OF_MONTH=5,DAY_OF_MONTH=31,DAY_OF_YEAR=151,DAY_OF_WEEK=3,DAY_OF_WEEK_IN_MONTH=5,AM_PM=0,HOUR=2,HOUR_OF_DAY=2,MINUTE=46,SECOND=39,MILLISECOND=187,ZONE_OFFSET=18000000,DST_OFFSET=0])
+	Группа: Программирование на Java ЛБ, АТ-02
+	Страна: 
+	Город: Екатеринбург
+	Университет: УрФУ им. первого Президента России Б. Н. Ельцина
+Бобоев Азизджон :
+	Пол: 0
+	Возраст: 0 ()
+	Группа: Программирование на Java ЛБ, АТ-02
+	Страна: 
+	Город: 
+	Университет: 
+Александр Валюх:
+	Пол: MALE
+	Возраст: 1994 (java.util.GregorianCalendar[time=-61202657600813,areFieldsSet=true,areAllFieldsSet=true,lenient=true,zone=sun.util.calendar.ZoneInfo[id="Asia/Yekaterinburg",offset=18000000,dstSavings=0,useDaylight=false,transitions=68,lastRule=null],firstDayOfWeek=2,minimalDaysInFirstWeek=4,ERA=1,YEAR=30,MONTH=6,WEEK_OF_YEAR=30,WEEK_OF_MONTH=4,DAY_OF_MONTH=28,DAY_OF_YEAR=209,DAY_OF_WEEK=6,DAY_OF_WEEK_IN_MONTH=4,AM_PM=0,HOUR=2,HOUR_OF_DAY=2,MINUTE=46,SECOND=39,MILLISECOND=187,ZONE_OFFSET=18000000,DST_OFFSET=0])
+	Группа: Программирование на Java ЛБ, АТ-02
+	Страна: 
+	Город: 
+	Университет: УрФУ им. первого Президента России Б. Н. Ельцина
+Ибатулов Степан :
+	Пол: 0
+	Возраст: 0 ()
+	Группа: Программирование на Java ЛБ, АТ-02
+	Страна: 
+	Город: 
+	Университет: 
+Ильиных Георгий :
+	Пол: 0
+	Возраст: 0 ()
+	Группа: Программирование на Java ЛБ, АТ-02
+	Страна: 
+	Город: 
+	Университет: 
+Олег Климов:
+	Пол: MALE
+	Возраст: 1995 (java.util.GregorianCalendar[time=-61239809600813,areFieldsSet=true,areAllFieldsSet=true,lenient=true,zone=sun.util.calendar.ZoneInfo[id="Asia/Yekaterinburg",offset=18000000,dstSavings=0,useDaylight=false,transitions=68,lastRule=null],firstDayOfWeek=2,minimalDaysInFirstWeek=4,ERA=1,YEAR=29,MONTH=4,WEEK_OF_YEAR=21,WEEK_OF_MONTH=4,DAY_OF_MONTH=24,DAY_OF_YEAR=144,DAY_OF_WEEK=3,DAY_OF_WEEK_IN_MONTH=4,AM_PM=0,HOUR=2,HOUR_OF_DAY=2,MINUTE=46,SECOND=39,MILLISECOND=187,ZONE_OFFSET=18000000,DST_OFFSET=0])
+	Группа: Программирование на Java ЛБ, АТ-02
+	Страна: 
+	Город: 
+	Университет: 
+Михаил Кощеев:
+	Пол: MALE
+	Возраст: 2016 (java.util.GregorianCalendar[time=-61913038400813,areFieldsSet=true,areAllFieldsSet=true,lenient=true,zone=sun.util.calendar.ZoneInfo[id="Asia/Yekaterinburg",offset=18000000,dstSavings=0,useDaylight=false,transitions=68,lastRule=null],firstDayOfWeek=2,minimalDaysInFirstWeek=4,ERA=1,YEAR=8,MONTH=0,WEEK_OF_YEAR=4,WEEK_OF_MONTH=4,DAY_OF_MONTH=23,DAY_OF_YEAR=23,DAY_OF_WEEK=2,DAY_OF_WEEK_IN_MONTH=4,AM_PM=0,HOUR=2,HOUR_OF_DAY=2,MINUTE=46,SECOND=39,MILLISECOND=187,ZONE_OFFSET=18000000,DST_OFFSET=0])
+	Группа: Программирование на Java ЛБ, АТ-02
+	Страна: 
+	Город: 
+	Университет: УрФУ им. первого Президента России Б. Н. Ельцина
+Сергей Мамаев:
+	Пол: MALE
+	Возраст: 2018 (java.util.GregorianCalendar[time=-61951832000813,areFieldsSet=true,areAllFieldsSet=true,lenient=true,zone=sun.util.calendar.ZoneInfo[id="Asia/Yekaterinburg",offset=18000000,dstSavings=0,useDaylight=false,transitions=68,lastRule=null],firstDayOfWeek=2,minimalDaysInFirstWeek=4,ERA=1,YEAR=6,MONTH=9,WEEK_OF_YEAR=43,WEEK_OF_MONTH=4,DAY_OF_MONTH=31,DAY_OF_YEAR=304,DAY_OF_WEEK=1,DAY_OF_WEEK_IN_MONTH=5,AM_PM=0,HOUR=2,HOUR_OF_DAY=2,MINUTE=46,SECOND=39,MILLISECOND=187,ZONE_OFFSET=18000000,DST_OFFSET=0])
+	Группа: Программирование на Java ЛБ, АТ-02
+	Страна: 
+	Город: Соликамск
+	Университет: УрФУ им. первого Президента России Б. Н. Ельцина
+Виталий Моисеев:
+	Пол: MALE
+	Возраст: 1999 (java.util.GregorianCalendar[time=-61347723200813,areFieldsSet=true,areAllFieldsSet=true,lenient=true,zone=sun.util.calendar.ZoneInfo[id="Asia/Yekaterinburg",offset=18000000,dstSavings=0,useDaylight=false,transitions=68,lastRule=null],firstDayOfWeek=2,minimalDaysInFirstWeek=4,ERA=1,YEAR=25,MONTH=11,WEEK_OF_YEAR=51,WEEK_OF_MONTH=3,DAY_OF_MONTH=22,DAY_OF_YEAR=356,DAY_OF_WEEK=7,DAY_OF_WEEK_IN_MONTH=4,AM_PM=0,HOUR=2,HOUR_OF_DAY=2,MINUTE=46,SECOND=39,MILLISECOND=187,ZONE_OFFSET=18000000,DST_OFFSET=0])
+	Группа: Программирование на Java ЛБ, АТ-02
+	Страна: 
+	Город: 
+	Университет: УрФУ им. первого Президента России Б. Н. Ельцина
+Маша Нятина:
+	Пол: FEMALE
+	Возраст: 2005 (java.util.GregorianCalendar[time=-61552577600813,areFieldsSet=true,areAllFieldsSet=true,lenient=true,zone=sun.util.calendar.ZoneInfo[id="Asia/Yekaterinburg",offset=18000000,dstSavings=0,useDaylight=false,transitions=68,lastRule=null],firstDayOfWeek=2,minimalDaysInFirstWeek=4,ERA=1,YEAR=19,MONTH=5,WEEK_OF_YEAR=26,WEEK_OF_MONTH=5,DAY_OF_MONTH=26,DAY_OF_YEAR=177,DAY_OF_WEEK=2,DAY_OF_WEEK_IN_MONTH=4,AM_PM=0,HOUR=2,HOUR_OF_DAY=2,MINUTE=46,SECOND=39,MILLISECOND=187,ZONE_OFFSET=18000000,DST_OFFSET=0])
+	Группа: Программирование на Java ЛБ, АТ-02
+	Страна: 
+	Город: Серов
+	Университет: УрФУ им. первого Президента России Б. Н. Ельцина
+Илья Петров:
+	Пол: MALE
+	Возраст: 1994 (java.util.GregorianCalendar[time=-61213371200813,areFieldsSet=true,areAllFieldsSet=true,lenient=true,zone=sun.util.calendar.ZoneInfo[id="Asia/Yekaterinburg",offset=18000000,dstSavings=0,useDaylight=false,transitions=68,lastRule=null],firstDayOfWeek=2,minimalDaysInFirstWeek=4,ERA=1,YEAR=30,MONTH=2,WEEK_OF_YEAR=12,WEEK_OF_MONTH=4,DAY_OF_MONTH=26,DAY_OF_YEAR=85,DAY_OF_WEEK=1,DAY_OF_WEEK_IN_MONTH=4,AM_PM=0,HOUR=2,HOUR_OF_DAY=2,MINUTE=46,SECOND=39,MILLISECOND=187,ZONE_OFFSET=18000000,DST_OFFSET=0])
+	Группа: Программирование на Java ЛБ, АТ-02
+	Страна: 
+	Город: Зеленокумск
+	Университет: 
+Алексей Пчелинцев:
+	Пол: MALE
+	Возраст: 1995 (java.util.GregorianCalendar[time=-61229096000813,areFieldsSet=true,areAllFieldsSet=true,lenient=true,zone=sun.util.calendar.ZoneInfo[id="Asia/Yekaterinburg",offset=18000000,dstSavings=0,useDaylight=false,transitions=68,lastRule=null],firstDayOfWeek=2,minimalDaysInFirstWeek=4,ERA=1,YEAR=29,MONTH=8,WEEK_OF_YEAR=38,WEEK_OF_MONTH=4,DAY_OF_MONTH=25,DAY_OF_YEAR=268,DAY_OF_WEEK=1,DAY_OF_WEEK_IN_MONTH=4,AM_PM=0,HOUR=2,HOUR_OF_DAY=2,MINUTE=46,SECOND=39,MILLISECOND=187,ZONE_OFFSET=18000000,DST_OFFSET=0])
+	Группа: Программирование на Java ЛБ, АТ-02
+	Страна: 
+	Город: Новоуральск
+	Университет: 
+Алексей Светличный:
+	Пол: MALE
+	Возраст: 2021 (java.util.GregorianCalendar[time=-62051796800813,areFieldsSet=true,areAllFieldsSet=true,lenient=true,zone=sun.util.calendar.ZoneInfo[id="Asia/Yekaterinburg",offset=18000000,dstSavings=0,useDaylight=false,transitions=68,lastRule=null],firstDayOfWeek=2,minimalDaysInFirstWeek=4,ERA=1,YEAR=3,MONTH=7,WEEK_OF_YEAR=35,WEEK_OF_MONTH=5,DAY_OF_MONTH=31,DAY_OF_YEAR=243,DAY_OF_WEEK=6,DAY_OF_WEEK_IN_MONTH=5,AM_PM=0,HOUR=2,HOUR_OF_DAY=2,MINUTE=46,SECOND=39,MILLISECOND=187,ZONE_OFFSET=18000000,DST_OFFSET=0])
+	Группа: Программирование на Java ЛБ, АТ-02
+	Страна: 
+	Город: Екатеринбург
+	Университет: 
+Кирилл Скуратов:
+	Пол: MALE
+	Возраст: 2001 (java.util.GregorianCalendar[time=-61410449600813,areFieldsSet=true,areAllFieldsSet=true,lenient=true,zone=sun.util.calendar.ZoneInfo[id="Asia/Yekaterinburg",offset=18000000,dstSavings=0,useDaylight=false,transitions=68,lastRule=null],firstDayOfWeek=2,minimalDaysInFirstWeek=4,ERA=1,YEAR=23,MONTH=11,WEEK_OF_YEAR=52,WEEK_OF_MONTH=5,DAY_OF_MONTH=27,DAY_OF_YEAR=361,DAY_OF_WEEK=2,DAY_OF_WEEK_IN_MONTH=4,AM_PM=0,HOUR=2,HOUR_OF_DAY=2,MINUTE=46,SECOND=39,MILLISECOND=187,ZONE_OFFSET=18000000,DST_OFFSET=0])
+	Группа: Программирование на Java ЛБ, АТ-02
+	Страна: 
+	Город: Алапаевск
+	Университет: УрФУ им. первого Президента России Б. Н. Ельцина
+Даниил Филиппов:
+	Пол: MALE
+	Возраст: 1999 (java.util.GregorianCalendar[time=-61366385600813,areFieldsSet=true,areAllFieldsSet=true,lenient=true,zone=sun.util.calendar.ZoneInfo[id="Asia/Yekaterinburg",offset=18000000,dstSavings=0,useDaylight=false,transitions=68,lastRule=null],firstDayOfWeek=2,minimalDaysInFirstWeek=4,ERA=1,YEAR=25,MONTH=4,WEEK_OF_YEAR=20,WEEK_OF_MONTH=3,DAY_OF_MONTH=20,DAY_OF_YEAR=140,DAY_OF_WEEK=1,DAY_OF_WEEK_IN_MONTH=3,AM_PM=0,HOUR=2,HOUR_OF_DAY=2,MINUTE=46,SECOND=39,MILLISECOND=187,ZONE_OFFSET=18000000,DST_OFFSET=0])
+	Группа: Программирование на Java ЛБ, АТ-02
+	Страна: 
+	Город: 
+	Университет: УрФУ им. первого Президента России Б. Н. Ельцина
+Ирина Числова:
+	Пол: FEMALE
+	Возраст: 2004 (java.util.GregorianCalendar[time=-61504712000813,areFieldsSet=true,areAllFieldsSet=true,lenient=true,zone=sun.util.calendar.ZoneInfo[id="Asia/Yekaterinburg",offset=18000000,dstSavings=0,useDaylight=false,transitions=68,lastRule=null],firstDayOfWeek=2,minimalDaysInFirstWeek=4,ERA=1,YEAR=20,MONTH=11,WEEK_OF_YEAR=1,WEEK_OF_MONTH=5,DAY_OF_MONTH=31,DAY_OF_YEAR=366,DAY_OF_WEEK=3,DAY_OF_WEEK_IN_MONTH=5,AM_PM=0,HOUR=2,HOUR_OF_DAY=2,MINUTE=46,SECOND=39,MILLISECOND=187,ZONE_OFFSET=18000000,DST_OFFSET=0])
+	Группа: Программирование на Java ЛБ, АТ-02
+	Страна: 
+	Город: Екатеринбург
+	Университет: УрФУ им. первого Президента России Б. Н. Ельцина
+Ширыкалова Дарья :
+	Пол: 0
+	Возраст: 0 ()
+	Группа: Программирование на Java ЛБ, АТ-02
+	Страна: 
+	Город: 
+	Университет: 
+Максим Аверьянов:
+	Пол: MALE
+	Возраст: 2000 (java.util.GregorianCalendar[time=-61389022400813,areFieldsSet=true,areAllFieldsSet=true,lenient=true,zone=sun.util.calendar.ZoneInfo[id="Asia/Yekaterinburg",offset=18000000,dstSavings=0,useDaylight=false,transitions=68,lastRule=null],firstDayOfWeek=2,minimalDaysInFirstWeek=4,ERA=1,YEAR=24,MONTH=7,WEEK_OF_YEAR=35,WEEK_OF_MONTH=5,DAY_OF_MONTH=31,DAY_OF_YEAR=244,DAY_OF_WEEK=5,DAY_OF_WEEK_IN_MONTH=5,AM_PM=0,HOUR=2,HOUR_OF_DAY=2,MINUTE=46,SECOND=39,MILLISECOND=187,ZONE_OFFSET=18000000,DST_OFFSET=0])
+	Группа: Программирование на Java ЛБ, АТ-03
+	Страна: 
+	Город: Верхний Уфалей
+	Университет: УрФУ им. первого Президента России Б. Н. Ельцина
+Артём Антропов:
+	Пол: MALE
+	Возраст: 2005 (java.util.GregorianCalendar[time=-61557502400813,areFieldsSet=true,areAllFieldsSet=true,lenient=true,zone=sun.util.calendar.ZoneInfo[id="Asia/Yekaterinburg",offset=18000000,dstSavings=0,useDaylight=false,transitions=68,lastRule=null],firstDayOfWeek=2,minimalDaysInFirstWeek=4,ERA=1,YEAR=19,MONTH=3,WEEK_OF_YEAR=17,WEEK_OF_MONTH=4,DAY_OF_MONTH=30,DAY_OF_YEAR=120,DAY_OF_WEEK=1,DAY_OF_WEEK_IN_MONTH=5,AM_PM=0,HOUR=2,HOUR_OF_DAY=2,MINUTE=46,SECOND=39,MILLISECOND=187,ZONE_OFFSET=18000000,DST_OFFSET=0])
+	Группа: Программирование на Java ЛБ, АТ-03
+	Страна: 
+	Город: Екатеринбург
+	Университет: УрФУ им. первого Президента России Б. Н. Ельцина
+Михаил Аристов:
+	Пол: MALE
+	Возраст: 2018 (java.util.GregorianCalendar[time=-61960385600813,areFieldsSet=true,areAllFieldsSet=true,lenient=true,zone=sun.util.calendar.ZoneInfo[id="Asia/Yekaterinburg",offset=18000000,dstSavings=0,useDaylight=false,transitions=68,lastRule=null],firstDayOfWeek=2,minimalDaysInFirstWeek=4,ERA=1,YEAR=6,MONTH=6,WEEK_OF_YEAR=29,WEEK_OF_MONTH=4,DAY_OF_MONTH=24,DAY_OF_YEAR=205,DAY_OF_WEEK=7,DAY_OF_WEEK_IN_MONTH=4,AM_PM=0,HOUR=2,HOUR_OF_DAY=2,MINUTE=46,SECOND=39,MILLISECOND=187,ZONE_OFFSET=18000000,DST_OFFSET=0])
+	Группа: Программирование на Java ЛБ, АТ-03
+	Страна: 
+	Город: 
+	Университет: 
+Аттиа Мохамед Магди Абдельхамид Мохамед :
+	Пол: 0
+	Возраст: 0 ()
+	Группа: Программирование на Java ЛБ, АТ-03
+	Страна: 
+	Город: 
+	Университет: 
+Илья Ахметов:
+	Пол: MALE
+	Возраст: 2013 (java.util.GregorianCalendar[time=-61799854400813,areFieldsSet=true,areAllFieldsSet=true,lenient=true,zone=sun.util.calendar.ZoneInfo[id="Asia/Yekaterinburg",offset=18000000,dstSavings=0,useDaylight=false,transitions=68,lastRule=null],firstDayOfWeek=2,minimalDaysInFirstWeek=4,ERA=1,YEAR=11,MONTH=7,WEEK_OF_YEAR=35,WEEK_OF_MONTH=4,DAY_OF_MONTH=25,DAY_OF_YEAR=237,DAY_OF_WEEK=3,DAY_OF_WEEK_IN_MONTH=4,AM_PM=0,HOUR=2,HOUR_OF_DAY=2,MINUTE=46,SECOND=39,MILLISECOND=187,ZONE_OFFSET=18000000,DST_OFFSET=0])
+	Группа: Программирование на Java ЛБ, АТ-03
+	Страна: 
+	Город: Челябинск
+	Университет: УрФУ им. первого Президента России Б. Н. Ельцина
+ба амаду ди шериф :
+	Пол: 0
+	Возраст: 0 ()
+	Группа: Программирование на Java ЛБ, АТ-03
+	Страна: 
+	Город: 
+	Университет: 
+Валерия Мирошникова:
+	Пол: FEMALE
+	Возраст: 1996 (java.util.GregorianCalendar[time=-61268494400813,areFieldsSet=true,areAllFieldsSet=true,lenient=true,zone=sun.util.calendar.ZoneInfo[id="Asia/Yekaterinburg",offset=18000000,dstSavings=0,useDaylight=false,transitions=68,lastRule=null],firstDayOfWeek=2,minimalDaysInFirstWeek=4,ERA=1,YEAR=28,MONTH=5,WEEK_OF_YEAR=26,WEEK_OF_MONTH=4,DAY_OF_MONTH=26,DAY_OF_YEAR=178,DAY_OF_WEEK=7,DAY_OF_WEEK_IN_MONTH=4,AM_PM=0,HOUR=2,HOUR_OF_DAY=2,MINUTE=46,SECOND=39,MILLISECOND=187,ZONE_OFFSET=18000000,DST_OFFSET=0])
+	Группа: Программирование на Java ЛБ, АТ-03
+	Страна: 
+	Город: липецк
+	Университет: УрФУ им. первого Президента России Б. Н. Ельцина
+Воробьев Кирилл :
+	Пол: 0
+	Возраст: 0 ()
+	Группа: Программирование на Java ЛБ, АТ-03
+	Страна: 
+	Город: 
+	Университет: 
+Илья Глухов:
+	Пол: MALE
+	Возраст: 0 ()
+	Группа: Программирование на Java ЛБ, АТ-03
+	Страна: 
+	Город: Сургут
+	Университет: 
+Джаафар Махмуд :
+	Пол: 0
+	Возраст: 0 ()
+	Группа: Программирование на Java ЛБ, АТ-03
+	Страна: 
+	Город: 
+	Университет: 
+Максим Елисеев:
+	Пол: MALE
+	Возраст: 2013 (java.util.GregorianCalendar[time=-61794065600813,areFieldsSet=true,areAllFieldsSet=true,lenient=true,zone=sun.util.calendar.ZoneInfo[id="Asia/Yekaterinburg",offset=18000000,dstSavings=0,useDaylight=false,transitions=68,lastRule=null],firstDayOfWeek=2,minimalDaysInFirstWeek=4,ERA=1,YEAR=11,MONTH=9,WEEK_OF_YEAR=44,WEEK_OF_MONTH=5,DAY_OF_MONTH=31,DAY_OF_YEAR=304,DAY_OF_WEEK=7,DAY_OF_WEEK_IN_MONTH=5,AM_PM=0,HOUR=2,HOUR_OF_DAY=2,MINUTE=46,SECOND=39,MILLISECOND=187,ZONE_OFFSET=18000000,DST_OFFSET=0])
+	Группа: Программирование на Java ЛБ, АТ-03
+	Страна: 
+	Город: Новоуральск
+	Университет: 
+Ксения Еремина:
+	Пол: FEMALE
+	Возраст: 0 ()
+	Группа: Программирование на Java ЛБ, АТ-03
+	Страна: 
+	Город: 
+	Университет: 
+Егор Ершов:
+	Пол: MALE
+	Возраст: 1999 (java.util.GregorianCalendar[time=-61375803200813,areFieldsSet=true,areAllFieldsSet=true,lenient=true,zone=sun.util.calendar.ZoneInfo[id="Asia/Yekaterinburg",offset=18000000,dstSavings=0,useDaylight=false,transitions=68,lastRule=null],firstDayOfWeek=2,minimalDaysInFirstWeek=4,ERA=1,YEAR=25,MONTH=0,WEEK_OF_YEAR=5,WEEK_OF_MONTH=5,DAY_OF_MONTH=31,DAY_OF_YEAR=31,DAY_OF_WEEK=4,DAY_OF_WEEK_IN_MONTH=5,AM_PM=0,HOUR=2,HOUR_OF_DAY=2,MINUTE=46,SECOND=39,MILLISECOND=187,ZONE_OFFSET=18000000,DST_OFFSET=0])
+	Группа: Программирование на Java ЛБ, АТ-03
+	Страна: 
+	Город: Екатеринбург
+	Университет: УрФУ им. первого Президента России Б. Н. Ельцина
+Зеленин Дмитрий :
+	Пол: 0
+	Возраст: 0 ()
+	Группа: Программирование на Java ЛБ, АТ-03
+	Страна: 
+	Город: 
+	Университет: 
+Зефиров Никита :
+	Пол: 0
+	Возраст: 0 ()
+	Группа: Программирование на Java ЛБ, АТ-03
+	Страна: 
+	Город: 
+	Университет: 
+Андрей Зубков:
+	Пол: MALE
+	Возраст: 2015 (java.util.GregorianCalendar[time=-61868110400813,areFieldsSet=true,areAllFieldsSet=true,lenient=true,zone=sun.util.calendar.ZoneInfo[id="Asia/Yekaterinburg",offset=18000000,dstSavings=0,useDaylight=false,transitions=68,lastRule=null],firstDayOfWeek=2,minimalDaysInFirstWeek=4,ERA=1,YEAR=9,MONTH=5,WEEK_OF_YEAR=26,WEEK_OF_MONTH=4,DAY_OF_MONTH=26,DAY_OF_YEAR=177,DAY_OF_WEEK=4,DAY_OF_WEEK_IN_MONTH=4,AM_PM=0,HOUR=2,HOUR_OF_DAY=2,MINUTE=46,SECOND=39,MILLISECOND=187,ZONE_OFFSET=18000000,DST_OFFSET=0])
+	Группа: Программирование на Java ЛБ, АТ-03
+	Страна: 
+	Город: Нижний Тагил
+	Университет: 
+Калягина Ольга :
+	Пол: 0
+	Возраст: 0 ()
+	Группа: Программирование на Java ЛБ, АТ-03
+	Страна: 
+	Город: 
+	Университет: 
+Клевакина Дарья :
+	Пол: 0
+	Возраст: 0 ()
+	Группа: Программирование на Java ЛБ, АТ-03
+	Страна: 
+	Город: 
+	Университет: 
+Анастасия Кокшарова:
+	Пол: FEMALE
+	Возраст: 0 ()
+	Группа: Программирование на Java ЛБ, АТ-03
+	Страна: 
+	Город: 
+	Университет: ПГГПУ
+Крапивин Даниил :
+	Пол: 0
+	Возраст: 0 ()
+	Группа: Программирование на Java ЛБ, АТ-03
+	Страна: 
+	Город: 
+	Университет: 
+Лев Курамов:
+	Пол: MALE
+	Возраст: 0 ()
+	Группа: Программирование на Java ЛБ, АТ-03
+	Страна: 
+	Город: 
+	Университет: УрФУ им. первого Президента России Б. Н. Ельцина
+Константин Лапин:
+	Пол: MALE
+	Возраст: 2010 (java.util.GregorianCalendar[time=-61694100800813,areFieldsSet=true,areAllFieldsSet=true,lenient=true,zone=sun.util.calendar.ZoneInfo[id="Asia/Yekaterinburg",offset=18000000,dstSavings=0,useDaylight=false,transitions=68,lastRule=null],firstDayOfWeek=2,minimalDaysInFirstWeek=4,ERA=1,YEAR=14,MONTH=11,WEEK_OF_YEAR=1,WEEK_OF_MONTH=5,DAY_OF_MONTH=31,DAY_OF_YEAR=365,DAY_OF_WEEK=2,DAY_OF_WEEK_IN_MONTH=5,AM_PM=0,HOUR=2,HOUR_OF_DAY=2,MINUTE=46,SECOND=39,MILLISECOND=187,ZONE_OFFSET=18000000,DST_OFFSET=0])
+	Группа: Программирование на Java ЛБ, АТ-03
+	Страна: 
+	Город: Екатеринбург
+	Университет: 
+Максим Лепинских:
+	Пол: MALE
+	Возраст: 1989 (java.util.GregorianCalendar[time=-61050248000813,areFieldsSet=true,areAllFieldsSet=true,lenient=true,zone=sun.util.calendar.ZoneInfo[id="Asia/Yekaterinburg",offset=18000000,dstSavings=0,useDaylight=false,transitions=68,lastRule=null],firstDayOfWeek=2,minimalDaysInFirstWeek=4,ERA=1,YEAR=35,MONTH=4,WEEK_OF_YEAR=21,WEEK_OF_MONTH=4,DAY_OF_MONTH=27,DAY_OF_YEAR=147,DAY_OF_WEEK=6,DAY_OF_WEEK_IN_MONTH=4,AM_PM=0,HOUR=2,HOUR_OF_DAY=2,MINUTE=46,SECOND=39,MILLISECOND=187,ZONE_OFFSET=18000000,DST_OFFSET=0])
+	Группа: Программирование на Java ЛБ, АТ-03
+	Страна: 
+	Город: Екатеринбург
+	Университет: УрФУ им. первого Президента России Б. Н. Ельцина
+Лобанов Николай :
+	Пол: 0
+	Возраст: 0 ()
+	Группа: Программирование на Java ЛБ, АТ-03
+	Страна: 
+	Город: 
+	Университет: 
+Влад Логинов:
+	Пол: MALE
+	Возраст: 1998 (java.util.GregorianCalendar[time=-61336577600813,areFieldsSet=true,areAllFieldsSet=true,lenient=true,zone=sun.util.calendar.ZoneInfo[id="Asia/Yekaterinburg",offset=18000000,dstSavings=0,useDaylight=false,transitions=68,lastRule=null],firstDayOfWeek=2,minimalDaysInFirstWeek=4,ERA=1,YEAR=26,MONTH=3,WEEK_OF_YEAR=18,WEEK_OF_MONTH=5,DAY_OF_MONTH=30,DAY_OF_YEAR=120,DAY_OF_WEEK=3,DAY_OF_WEEK_IN_MONTH=5,AM_PM=0,HOUR=2,HOUR_OF_DAY=2,MINUTE=46,SECOND=39,MILLISECOND=187,ZONE_OFFSET=18000000,DST_OFFSET=0])
+	Группа: Программирование на Java ЛБ, АТ-03
+	Страна: 
+	Город: Екатеринбург
+	Университет: УрФУ им. первого Президента России Б. Н. Ельцина
+Дима Лысиков:
+	Пол: MALE
+	Возраст: 0 ()
+	Группа: Программирование на Java ЛБ, АТ-03
+	Страна: 
+	Город: Кваркено
+	Университет: 
+Георгий Малышев:
+	Пол: MALE
+	Возраст: 2017 (java.util.GregorianCalendar[time=-61938785600813,areFieldsSet=true,areAllFieldsSet=true,lenient=true,zone=sun.util.calendar.ZoneInfo[id="Asia/Yekaterinburg",offset=18000000,dstSavings=0,useDaylight=false,transitions=68,lastRule=null],firstDayOfWeek=2,minimalDaysInFirstWeek=4,ERA=1,YEAR=7,MONTH=2,WEEK_OF_YEAR=13,WEEK_OF_MONTH=5,DAY_OF_MONTH=31,DAY_OF_YEAR=90,DAY_OF_WEEK=5,DAY_OF_WEEK_IN_MONTH=5,AM_PM=0,HOUR=2,HOUR_OF_DAY=2,MINUTE=46,SECOND=39,MILLISECOND=187,ZONE_OFFSET=18000000,DST_OFFSET=0])
+	Группа: Программирование на Java ЛБ, АТ-03
+	Страна: 
+	Город: Новобелокатай
+	Университет: УрФУ им. первого Президента России Б. Н. Ельцина
+Глеб Мозгляков:
+	Пол: MALE
+	Возраст: 1994 (java.util.GregorianCalendar[time=-61191857600813,areFieldsSet=true,areAllFieldsSet=true,lenient=true,zone=sun.util.calendar.ZoneInfo[id="Asia/Yekaterinburg",offset=18000000,dstSavings=0,useDaylight=false,transitions=68,lastRule=null],firstDayOfWeek=2,minimalDaysInFirstWeek=4,ERA=1,YEAR=30,MONTH=10,WEEK_OF_YEAR=48,WEEK_OF_MONTH=5,DAY_OF_MONTH=30,DAY_OF_YEAR=334,DAY_OF_WEEK=5,DAY_OF_WEEK_IN_MONTH=5,AM_PM=0,HOUR=2,HOUR_OF_DAY=2,MINUTE=46,SECOND=39,MILLISECOND=187,ZONE_OFFSET=18000000,DST_OFFSET=0])
+	Группа: Программирование на Java ЛБ, АТ-03
+	Страна: 
+	Город: Екатеринбург
+	Университет: УрФУ им. первого Президента России Б. Н. Ельцина
+Матвей Остролуцкий:
+	Пол: MALE
+	Возраст: 1991 (java.util.GregorianCalendar[time=-61095003200813,areFieldsSet=true,areAllFieldsSet=true,lenient=true,zone=sun.util.calendar.ZoneInfo[id="Asia/Yekaterinburg",offset=18000000,dstSavings=0,useDaylight=false,transitions=68,lastRule=null],firstDayOfWeek=2,minimalDaysInFirstWeek=4,ERA=1,YEAR=33,MONTH=11,WEEK_OF_YEAR=52,WEEK_OF_MONTH=4,DAY_OF_MONTH=25,DAY_OF_YEAR=359,DAY_OF_WEEK=6,DAY_OF_WEEK_IN_MONTH=4,AM_PM=0,HOUR=2,HOUR_OF_DAY=2,MINUTE=46,SECOND=39,MILLISECOND=187,ZONE_OFFSET=18000000,DST_OFFSET=0])
+	Группа: Программирование на Java ЛБ, АТ-03
+	Страна: 
+	Город: Ноябрьск
+	Университет: УрФУ им. первого Президента России Б. Н. Ельцина
+Пальгов Егор :
+	Пол: 0
+	Возраст: 0 ()
+	Группа: Программирование на Java ЛБ, АТ-03
+	Страна: 
+	Город: 
+	Университет: 
+Ekaterina Strygunova:
+	Пол: FEMALE
+	Возраст: 2006 (java.util.GregorianCalendar[time=-61571067200813,areFieldsSet=true,areAllFieldsSet=true,lenient=true,zone=sun.util.calendar.ZoneInfo[id="Asia/Yekaterinburg",offset=18000000,dstSavings=0,useDaylight=false,transitions=68,lastRule=null],firstDayOfWeek=2,minimalDaysInFirstWeek=4,ERA=1,YEAR=18,MONTH=10,WEEK_OF_YEAR=47,WEEK_OF_MONTH=4,DAY_OF_MONTH=24,DAY_OF_YEAR=328,DAY_OF_WEEK=5,DAY_OF_WEEK_IN_MONTH=4,AM_PM=0,HOUR=2,HOUR_OF_DAY=2,MINUTE=46,SECOND=39,MILLISECOND=187,ZONE_OFFSET=18000000,DST_OFFSET=0])
+	Группа: Программирование на Java ЛБ, АТ-03
+	Страна: 
+	Город: 
+	Университет: УрФУ им. первого Президента России Б. Н. Ельцина
+Дмитрий Терешко:
+	Пол: MALE
+	Возраст: 0 ()
+	Группа: Программирование на Java ЛБ, АТ-03
+	Страна: 
+	Город: Екатеринбург
+	Университет: 
+Лена Тищенко:
+	Пол: FEMALE
+	Возраст: 0 ()
+	Группа: Программирование на Java ЛБ, АТ-03
+	Страна: 
+	Город: 
+	Университет: 
+Антон Толкачёв:
+	Пол: MALE
+	Возраст: 0 ()
+	Группа: Программирование на Java ЛБ, АТ-03
+	Страна: 
+	Город: 
+	Университет: УрФУ им. первого Президента России Б. Н. Ельцина
+Тимур Хабибулин:
+	Пол: MALE
+	Возраст: 2012 (java.util.GregorianCalendar[time=-61770737600813,areFieldsSet=true,areAllFieldsSet=true,lenient=true,zone=sun.util.calendar.ZoneInfo[id="Asia/Yekaterinburg",offset=18000000,dstSavings=0,useDaylight=false,transitions=68,lastRule=null],firstDayOfWeek=2,minimalDaysInFirstWeek=4,ERA=1,YEAR=12,MONTH=6,WEEK_OF_YEAR=30,WEEK_OF_MONTH=4,DAY_OF_MONTH=27,DAY_OF_YEAR=209,DAY_OF_WEEK=4,DAY_OF_WEEK_IN_MONTH=4,AM_PM=0,HOUR=2,HOUR_OF_DAY=2,MINUTE=46,SECOND=39,MILLISECOND=187,ZONE_OFFSET=18000000,DST_OFFSET=0])
+	Группа: Программирование на Java ЛБ, АТ-03
+	Страна: 
+	Город: Челябинск
+	Университет: УрФУ им. первого Президента России Б. Н. Ельцина
+Цикарев Степан :
+	Пол: 0
+	Возраст: 0 ()
+	Группа: Программирование на Java ЛБ, АТ-03
+	Страна: 
+	Город: 
+	Университет: 
+Шилкин Егор :
+	Пол: 0
+	Возраст: 0 ()
+	Группа: Программирование на Java ЛБ, АТ-03
+	Страна: 
+	Город: 
+	Университет: 
+Юрков Алексей :
+	Пол: 0
+	Возраст: 0 ()
+	Группа: Программирование на Java ЛБ, АТ-03
+	Страна: 
+	Город: 
+	Университет: 
+Валентина Ярочкина:
+	Пол: FEMALE
+	Возраст: 0 ()
+	Группа: Программирование на Java ЛБ, АТ-03
+	Страна: 
+	Город: Пермь
+	Университет: УрФУ им. первого Президента России Б. Н. Ельцина
+Булыгин Илья :
+	Пол: 0
+	Возраст: 0 ()
+	Группа: Программирование на Java ЛБ, АТ-01, РТФ Java Пересдачи
+	Страна: 
+	Город: 
+	Университет: 
+Глеб Смирнов:
+	Пол: MALE
+	Возраст: 0 ()
+	Группа: Программирование на Java ЛБ, АТ-02, РТФ Java Пересдачи
+	Страна: 
+	Город: Саянск
+	Университет: 
+Чаховский Илья :
+	Пол: 0
+	Возраст: 0 ()
+	Группа: Программирование на Java ЛБ, АТ-02, РТФ Java Пересдачи
+	Страна: 
+	Город: 
+	Университет: 
+Фырат Караташоглу:
+	Пол: MALE
+	Возраст: 2000 (java.util.GregorianCalendar[time=-61391700800813,areFieldsSet=true,areAllFieldsSet=true,lenient=true,zone=sun.util.calendar.ZoneInfo[id="Asia/Yekaterinburg",offset=18000000,dstSavings=0,useDaylight=false,transitions=68,lastRule=null],firstDayOfWeek=2,minimalDaysInFirstWeek=4,ERA=1,YEAR=24,MONTH=6,WEEK_OF_YEAR=31,WEEK_OF_MONTH=5,DAY_OF_MONTH=31,DAY_OF_YEAR=213,DAY_OF_WEEK=2,DAY_OF_WEEK_IN_MONTH=5,AM_PM=0,HOUR=2,HOUR_OF_DAY=2,MINUTE=46,SECOND=39,MILLISECOND=187,ZONE_OFFSET=18000000,DST_OFFSET=0])
+	Группа: Программирование на Java ЛБ, АТ-03, РТФ Java Пересдачи
+	Страна: 
+	Город: 
+	Университет: УрФУ им. первого Президента России Б. Н. Ельцина
+Евгений Лутков:
+	Пол: MALE
+	Возраст: 2014 (java.util.GregorianCalendar[time=-61838820800813,areFieldsSet=true,areAllFieldsSet=true,lenient=true,zone=sun.util.calendar.ZoneInfo[id="Asia/Yekaterinburg",offset=18000000,dstSavings=0,useDaylight=false,transitions=68,lastRule=null],firstDayOfWeek=2,minimalDaysInFirstWeek=4,ERA=1,YEAR=10,MONTH=4,WEEK_OF_YEAR=22,WEEK_OF_MONTH=5,DAY_OF_MONTH=31,DAY_OF_YEAR=151,DAY_OF_WEEK=7,DAY_OF_WEEK_IN_MONTH=5,AM_PM=0,HOUR=2,HOUR_OF_DAY=2,MINUTE=46,SECOND=39,MILLISECOND=187,ZONE_OFFSET=18000000,DST_OFFSET=0])
+	Группа: Программирование на Java ЛБ, АТ-03, РТФ Java Пересдачи
+	Страна: 
+	Город: Екатеринбург
+	Университет: 
+Мурад Бахаа :
+	Пол: 0
+	Возраст: 0 ()
+	Группа: Программирование на Java ЛБ, АТ-03, РТФ Java Пересдачи
+	Страна: 
+	Город: 
+	Университет: 
+Мызгин Игорь :
+	Пол: 0
+	Возраст: 0 ()
+	Группа: Программирование на Java ЛБ, АТ-03, РТФ Java Пересдачи
+	Страна: 
+	Город: 
+	Университет: 
+Давид Шамоев:
+	Пол: MALE
+	Возраст: 1994 (java.util.GregorianCalendar[time=-61208360000813,areFieldsSet=true,areAllFieldsSet=true,lenient=true,zone=sun.util.calendar.ZoneInfo[id="Asia/Yekaterinburg",offset=18000000,dstSavings=0,useDaylight=false,transitions=68,lastRule=null],firstDayOfWeek=2,minimalDaysInFirstWeek=4,ERA=1,YEAR=30,MONTH=4,WEEK_OF_YEAR=21,WEEK_OF_MONTH=4,DAY_OF_MONTH=23,DAY_OF_YEAR=143,DAY_OF_WEEK=3,DAY_OF_WEEK_IN_MONTH=4,AM_PM=0,HOUR=2,HOUR_OF_DAY=2,MINUTE=46,SECOND=39,MILLISECOND=187,ZONE_OFFSET=18000000,DST_OFFSET=0])
+	Группа: Программирование на Java ЛБ, АТ-03, РТФ Java Пересдачи
+	Страна: 
+	Город: 
+	Университет: 

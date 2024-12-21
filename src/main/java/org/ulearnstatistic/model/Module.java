@@ -14,9 +14,9 @@ public class Module {
     private final ArrayList<Practice> practices =  new ArrayList<>();
     private final ArrayList<ControlQuestion> cq =  new ArrayList<>();
 
-    public Module(String name) {
+    public Module(String name, int id) {
         this.name = name;
-        this.id = hashCode();
+        this.id = id;
     }
 
     public void setMaxPoints(MaxPointModuleStatistic maxPoints) {

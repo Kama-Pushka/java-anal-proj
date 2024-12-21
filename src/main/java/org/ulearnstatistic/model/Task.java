@@ -9,8 +9,8 @@ public abstract class Task {
     protected int maxPoint;
     protected final Map<Integer, Integer> points = new HashMap<>();
 
-    public Task(String name) {
-        this.id = hashCode(); // TODO из-за разного хэша одни и те же упр добавляются в бд
+    public Task(String name, int id) {
+        this.id = id;
         this.name = name;
     }
 

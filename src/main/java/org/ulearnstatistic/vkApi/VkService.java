@@ -24,6 +24,14 @@ public class VkService {
         actor = new UserActor(APP_ID,CODE);
     }
 
+    /**
+     * Поиск всех пользователей по имени среди группы.
+     * @param name Имя пользователя
+     * @param subId Группа, в которой будет осуществляться поиск
+     * @return SearchResponse, содержащий необходимые сведения для найденных пользователей
+     * @throws ClientException
+     * @throws ApiException
+     */
     public SearchResponse getUserByNameAndSubs(String name, long subId) throws ClientException, ApiException {
         return vk.users().search(actor)
                 .q(name)

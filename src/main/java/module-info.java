@@ -13,8 +13,8 @@ module org.ulearnstatistic {
     requires org.apache.commons.lang3;
     requires org.xerial.sqlitejdbc;
     requires java.desktop;
-    requires gson;
-    requires sdk;
+    requires com.google.gson;
+//    requires sdk;
 
     opens org.ulearnstatistic to javafx.fxml;
     exports org.ulearnstatistic;

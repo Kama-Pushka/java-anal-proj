@@ -21,8 +21,8 @@ public class Student {
     private String city;
     private University university;
 
-    public Student() {
-        id = System.identityHashCode(this); // TODO ??
+    public Student(int id) {
+        this.id = id;
     }
 
     public Student(StudentEntity student) {
