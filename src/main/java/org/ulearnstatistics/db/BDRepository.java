@@ -1,10 +1,7 @@
 package org.ulearnstatistics.db;
 
 import org.apache.commons.lang3.tuple.Triple;
-import org.ulearnstatistics.db.model.MaxPointModuleStatisticEntity;
-import org.ulearnstatistics.db.model.ModuleEntity;
-import org.ulearnstatistics.db.model.ModuleStudentStatisticEntity;
-import org.ulearnstatistics.db.model.TaskEntity;
+import org.ulearnstatistics.db.model.*;
 import org.ulearnstatistics.model.Module;
 
 import java.util.*;

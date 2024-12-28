@@ -1,4 +1,4 @@
-package org.ulearnstatistics.db;
+package org.ulearnstatistics.db.model;
 
 public class TaskPointsEntity {
     public int taskId;

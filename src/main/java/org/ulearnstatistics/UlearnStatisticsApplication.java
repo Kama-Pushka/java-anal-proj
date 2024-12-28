@@ -11,13 +11,16 @@ import javafx.scene.Scene;
 import javafx.scene.chart.*;
 import javafx.scene.control.*;
 import javafx.scene.control.Button;
+import javafx.scene.image.Image;
+import javafx.scene.image.ImageView;
 import javafx.scene.layout.HBox;
 import javafx.scene.layout.Pane;
+import javafx.scene.layout.VBox;
 import javafx.stage.Stage;
 import org.apache.commons.lang3.tuple.Triple;
 import org.ulearnstatistics.db.BDRepository;
 import org.ulearnstatistics.db.DBService;
-import org.ulearnstatistics.db.TaskPointsEntity;
+import org.ulearnstatistics.db.model.TaskPointsEntity;
 import org.ulearnstatistics.db.model.*;
 import org.ulearnstatistics.model.Student;
 import org.ulearnstatistics.parser.CSVUlearnReader;
@@ -28,7 +31,7 @@ import java.io.IOException;
 import java.util.*;
 import java.util.List;
 
-public class UlearnStatisticApplication extends Application {
+public class UlearnStatisticsApplication extends Application {
     /**
      * Модуль, по которому будут строяться графики. All - графики будут строиться по всем модулям.
      */
@@ -117,17 +120,24 @@ public class UlearnStatisticApplication extends Application {
             //ulearn.write("data/%s_report.txt".formatted(csvFileName), true, false);
         }
 
-        var fxmlLoader = new FXMLLoader(UlearnStatisticApplication.class.getResource("main-scene.fxml")); // TODO /main-scene.fxml
+        var fxmlLoader = new FXMLLoader(UlearnStatisticsApplication.class.getResource("main-scene.fxml")); // TODO /main-scene.fxml
         var scene = new Scene(fxmlLoader.load(), 1280, 720);
 
         Node tabScene = null;
-        var tabFxmlLoader = new FXMLLoader(UlearnStatisticApplication.class.getResource("tab-view.fxml")); // TODO /tab-view.fxml
+        var tabFxmlLoader = new FXMLLoader(UlearnStatisticsApplication.class.getResource("tab-view.fxml")); // TODO /tab-view.fxml
         var tabPane = (TabPane)scene.lookup("#mainTabPane");
         for (Tab tab : tabPane.getTabs()) {
             if (tab.getId().equals("defaultTab")) {
                 tab.setText(csvFileName + ".csv");
                 tab.setContent(tabFxmlLoader.load());
                 tabScene = tab.getContent();
+            } else if (tab.getId().equals("openNewFileTab")) {
+                var gif = new Image(getClass().getResourceAsStream("dezars.gif")); // TODO /dezars.gif
+                var imageView = new ImageView(gif);
+                var root = new VBox(imageView);
+                root.setTranslateX(500);
+                root.setTranslateY(250);
+                tab.setContent(root);
             }
         }
 
