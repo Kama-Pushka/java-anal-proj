@@ -1,7 +1,6 @@
-package org.ulearnstatistic.db.model;
+package org.ulearnstatistics.db.model;
 
-import org.ulearnstatistic.model.Sex;
-import org.ulearnstatistic.model.Student;
+import org.ulearnstatistics.model.Student;
 
 import java.sql.Date;
 import java.text.ParseException;

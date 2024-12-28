@@ -1,7 +1,7 @@
-package org.ulearnstatistic.parser;
+package org.ulearnstatistics.parser;
 
-import org.ulearnstatistic.model.*;
-import org.ulearnstatistic.model.Module;
+import org.ulearnstatistics.model.*;
+import org.ulearnstatistics.model.Module;
 
 import java.io.File;
 import java.io.FileWriter;

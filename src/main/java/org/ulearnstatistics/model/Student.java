@@ -1,13 +1,10 @@
-package org.ulearnstatistic.model;
+package org.ulearnstatistics.model;
 
-import java.text.DateFormat;
-import java.text.SimpleDateFormat;
 import java.time.LocalDate;
 import java.util.Calendar;
-import java.util.Date;
 import java.util.Objects;
 
-import org.ulearnstatistic.db.model.StudentEntity;
+import org.ulearnstatistics.db.model.StudentEntity;
 
 public class Student {
     private final int id;

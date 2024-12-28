@@ -1,13 +1,13 @@
-package org.ulearnstatistic.vkApi;
+package org.ulearnstatistics.vkApi;
 
 import com.google.gson.Gson;
 import com.vk.api.sdk.objects.users.OccupationType;
 import com.vk.api.sdk.objects.users.UserFull;
 import com.vk.api.sdk.objects.users.responses.SearchResponse;
 import org.apache.commons.lang3.tuple.Pair;
-import org.ulearnstatistic.model.Sex;
-import org.ulearnstatistic.model.Student;
-import org.ulearnstatistic.model.University;
+import org.ulearnstatistics.model.Sex;
+import org.ulearnstatistics.model.Student;
+import org.ulearnstatistics.model.University;
 
 import java.io.File;
 import java.io.FileWriter;

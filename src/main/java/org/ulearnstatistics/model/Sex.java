@@ -1,4 +1,4 @@
-package org.ulearnstatistic.model;
+package org.ulearnstatistics.model;
 
 public enum Sex {
     UNKNOWN(0), FEMALE(1), MALE(2);

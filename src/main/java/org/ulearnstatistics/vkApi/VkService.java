@@ -1,4 +1,4 @@
-package org.ulearnstatistic.vkApi;
+package org.ulearnstatistics.vkApi;
 
 import com.vk.api.sdk.client.TransportClient;
 import com.vk.api.sdk.client.VkApiClient;

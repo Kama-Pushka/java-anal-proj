@@ -1,4 +1,4 @@
-package org.ulearnstatistic;
+package org.ulearnstatistics;
 
 //import com.vk.api.sdk.objects.users.responses.SearchResponse;
 import javafx.application.Application;
@@ -15,13 +15,13 @@ import javafx.scene.layout.HBox;
 import javafx.scene.layout.Pane;
 import javafx.stage.Stage;
 import org.apache.commons.lang3.tuple.Triple;
-import org.ulearnstatistic.db.BDRepository;
-import org.ulearnstatistic.db.DBService;
-import org.ulearnstatistic.db.TaskPointsEntity;
-import org.ulearnstatistic.db.model.*;
-import org.ulearnstatistic.model.Student;
-import org.ulearnstatistic.parser.CSVUlearnReader;
-import org.ulearnstatistic.model.Module;
+import org.ulearnstatistics.db.BDRepository;
+import org.ulearnstatistics.db.DBService;
+import org.ulearnstatistics.db.TaskPointsEntity;
+import org.ulearnstatistics.db.model.*;
+import org.ulearnstatistics.model.Student;
+import org.ulearnstatistics.parser.CSVUlearnReader;
+import org.ulearnstatistics.model.Module;
 
 import java.io.File;
 import java.io.IOException;
@@ -117,11 +117,11 @@ public class UlearnStatisticApplication extends Application {
             //ulearn.write("data/%s_report.txt".formatted(csvFileName), true, false);
         }
 
-        var fxmlLoader = new FXMLLoader(UlearnStatisticApplication.class.getResource("main-scene.fxml"));
+        var fxmlLoader = new FXMLLoader(UlearnStatisticApplication.class.getResource("main-scene.fxml")); // TODO /main-scene.fxml
         var scene = new Scene(fxmlLoader.load(), 1280, 720);
 
         Node tabScene = null;
-        var tabFxmlLoader = new FXMLLoader(UlearnStatisticApplication.class.getResource("tab-view.fxml"));
+        var tabFxmlLoader = new FXMLLoader(UlearnStatisticApplication.class.getResource("tab-view.fxml")); // TODO /tab-view.fxml
         var tabPane = (TabPane)scene.lookup("#mainTabPane");
         for (Tab tab : tabPane.getTabs()) {
             if (tab.getId().equals("defaultTab")) {

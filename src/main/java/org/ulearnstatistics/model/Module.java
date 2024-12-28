@@ -1,4 +1,4 @@
-package org.ulearnstatistic.model;
+package org.ulearnstatistics.model;
 
 import java.util.ArrayList;
 import java.util.HashMap;

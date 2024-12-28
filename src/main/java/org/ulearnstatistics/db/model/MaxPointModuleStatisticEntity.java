@@ -1,21 +1,19 @@
-package org.ulearnstatistic.db.model;
+package org.ulearnstatistics.db.model;
 
-import org.ulearnstatistic.model.ModuleStudentStatistic;
+import org.ulearnstatistics.model.MaxPointModuleStatistic;
 
-public class ModuleStudentStatisticEntity {
+public class MaxPointModuleStatisticEntity {
     public int moduleId;
-    public int studentId;
     public int trainingPoint;
     public int practicePoint;
     public int seminarPoint;
     public int activityPoint;
     public int cqPoint;
 
-    public ModuleStudentStatisticEntity() {}
+    public MaxPointModuleStatisticEntity() {}
 
-    public ModuleStudentStatisticEntity(ModuleStudentStatistic m) {
+    public MaxPointModuleStatisticEntity(MaxPointModuleStatistic m) {
         moduleId = m.getModuleId();
-        studentId = m.getStudentId();
         trainingPoint = m.getTrainingPoint();
         practicePoint = m.getPracticePoint();
         seminarPoint = m.getSeminarPoint();

@@ -1,15 +1,17 @@
-package org.ulearnstatistic.model;
+package org.ulearnstatistics.model;
 
-public class MaxPointModuleStatistic {
+public class ModuleStudentStatistic {
     private final int moduleId;
+    private final int studentId;
     private int trainingPoint;
     private int practicePoint;
     private int seminarPoint;
     private int activityPoint;
     private int cqPoint;
 
-    public MaxPointModuleStatistic(int moduleId) {
+    public ModuleStudentStatistic(int moduleId, int studentId) {
         this.moduleId = moduleId;
+        this.studentId = studentId;
     }
 
     public void setPoint(String name, int points) {
@@ -24,6 +26,9 @@ public class MaxPointModuleStatistic {
 
     public int getModuleId() {
         return moduleId;
+    }
+    public int getStudentId() {
+        return studentId;
     }
     public int getTrainingPoint() {
         return trainingPoint;

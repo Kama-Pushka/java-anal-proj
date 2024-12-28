@@ -1,9 +1,9 @@
-package org.ulearnstatistic.vkApi;
+package org.ulearnstatistics.vkApi;
 
 import com.vk.api.sdk.exceptions.ApiException;
 import com.vk.api.sdk.exceptions.ClientException;
 import com.vk.api.sdk.objects.users.responses.SearchResponse;
-import org.ulearnstatistic.model.Student;
+import org.ulearnstatistics.model.Student;
 
 import java.util.HashMap;
 import java.util.List;

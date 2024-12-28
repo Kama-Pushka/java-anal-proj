@@ -1,6 +1,6 @@
-package org.ulearnstatistic.db.model;
+package org.ulearnstatistics.db.model;
 
-import org.ulearnstatistic.model.Module;
+import org.ulearnstatistics.model.Module;
 
 public class ModuleEntity {
     public int id;

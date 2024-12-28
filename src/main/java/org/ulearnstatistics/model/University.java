@@ -1,3 +1,3 @@
-package org.ulearnstatistic.model;
+package org.ulearnstatistics.model;
 
 public record University(int Id, String Name) { }

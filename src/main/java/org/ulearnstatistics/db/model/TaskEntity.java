@@ -1,7 +1,7 @@
-package org.ulearnstatistic.db.model;
+package org.ulearnstatistics.db.model;
 
-import org.ulearnstatistic.db.TaskPointsEntity;
-import org.ulearnstatistic.model.Task;
+import org.ulearnstatistics.db.TaskPointsEntity;
+import org.ulearnstatistics.model.Task;
 
 import java.util.ArrayList;
 
